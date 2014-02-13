@@ -1,0 +1,7 @@
+{ "_id" : { "$oid" : "52fc588b0364fb912910373b" }, "NodeID" : "R209", "type" : "room" }
+{ "_id" : { "$oid" : "52fc588b0364fb912910373c" }, "NodeID" : "R208", "type" : "room" }
+{ "_id" : { "$oid" : "52fc588b0364fb912910373d" }, "NodeID" : "R207", "type" : "room" }
+{ "_id" : { "$oid" : "52fc588b0364fb912910373e" }, "NodeID" : "R206", "type" : "room" }
+{ "_id" : { "$oid" : "52fc588b0364fb912910373f" }, "NodeID" : "H201", "type" : "hall" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103740" }, "NodeID" : "h202", "type" : "hall" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103741" }, "NodeID" : "h203", "type" : "hall" }

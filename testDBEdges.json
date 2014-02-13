@@ -1,0 +1,12 @@
+{ "_id" : { "$oid" : "52fc588b0364fb9129103742" }, "node1" : "R209", "node2" : "H201", "direction" : "north" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103743" }, "node1" : "R208", "node2" : "H202", "direction" : "north" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103744" }, "node1" : "R207", "node2" : "H201", "direction" : "south" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103745" }, "node1" : "R206", "node2" : "H202", "direction" : "south" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103746" }, "node1" : "H201", "node2" : "R209", "direction" : "south" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103747" }, "node1" : "H201", "node2" : "R207", "direction" : "north" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103748" }, "node1" : "H201", "node2" : "H202", "direction" : "east" }
+{ "_id" : { "$oid" : "52fc588b0364fb9129103749" }, "node1" : "H202", "node2" : "R208", "direction" : "south" }
+{ "_id" : { "$oid" : "52fc588b0364fb912910374a" }, "node1" : "H202", "node2" : "R206", "direction" : "north" }
+{ "_id" : { "$oid" : "52fc588b0364fb912910374b" }, "node1" : "H202", "node2" : "H201", "direction" : "west" }
+{ "_id" : { "$oid" : "52fc588b0364fb912910374c" }, "node1" : "H202", "node2" : "H203", "direction" : "east" }
+{ "_id" : { "$oid" : "52fc588b0364fb912910374d" }, "node1" : "H203", "node2" : "H202", "direction" : "west" }
