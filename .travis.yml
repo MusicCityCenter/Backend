@@ -1,4 +1,4 @@
 language: java
 before_script:
-- wget https://googleappengine.googlecode.com/files/appengine-java-sdk-1.8.9.zip-nv
+- wget https://googleappengine.googlecode.com/files/appengine-java-sdk-1.8.9.zip -nv
 - unzip -q appengine-java-sdk-1.8.9.zip
