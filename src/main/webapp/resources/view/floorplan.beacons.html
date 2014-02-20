@@ -1,0 +1,37 @@
+
+<div class="inner cover">
+	<h1 class="cover-heading">{{floorplanId}} beacons
+	<a href="#/floorplan/{{floorplanId}}" class="btn btn-med btn-default"><span class="glyphicon glyphicon-th"></span>Edit Floor Plan</a>
+	<a href class="btn btn-med btn-default" ng-click="saveBeacons()" ng-if="dirty">Save</a>
+	</h1>
+
+
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+
+		<p class="lead">
+			
+		</p>
+
+		<table class="table" style="text-align:left;">
+			<thead>
+				<tr>
+					<th>Location ID</th>
+					<th>Beacons</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="loc in beaconsMapping">
+					<td>{{loc.locationId}}</td>
+					<td>
+					<div class="form-group">
+					<input class="form-control" type="text" ng-model="beacons[loc.locationId]" ng-change="update(loc.locationId)"></input>
+					</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+</div>

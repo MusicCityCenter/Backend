@@ -1,2 +1,5 @@
-/bin
-/target
+.settings
+target
+.classpath
+.project
+datanucleus.log

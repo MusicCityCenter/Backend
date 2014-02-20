@@ -1,0 +1,105 @@
+
+<!-- Example row of columns -->
+<div class="row" style="text-align:left">
+	<div class="col-md-8">
+		<div id="container" style="margin: 0px"></div>
+	</div>
+	<div class="col-md-4">
+		<p>
+		<h4>
+			Floor plan: {{floorplanId}}<br></br>
+			<a href="#/beacons/{{floorplanId}}"><button type="submit" class="btn btn-default btn-med"
+				>
+				<span class="glyphicon glyphicon-map-marker"></span>&nbsp;Edit Beacons
+			</button></a>
+			<button type="submit" class="btn btn-default btn-med"
+				ng-click="saveFloorplan()" ng-if="dirty">
+				<span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;Save
+			</button>
+		</h4>
+		</p>
+
+		<h3>Instructions</h3>
+		<p>Click on the floorplan to add a location. Click on a location
+			and the press and hold shift while clicking another location to
+			create a connection. Select an edge or location and hit delete
+			or backspace to remove the element.</p>
+
+		<p style="margin-top:50px">
+		<form class="form-horizontal" role="form"
+			ng-if="locationSelection != null">
+			<h3>Edit Location</h3>
+			<div class="form-group">
+				<label for="id" class="col-sm-2 control-label">ID</label>
+				<div class="col-sm-10">
+					<input type="id" class="form-control" id="id"
+						ng-model="locationSelection.id" ng-required="true" ng-minlength="1"
+						ng-change="edited(locationSelection)"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="type" class="col-sm-2 control-label">Type</label>
+				<div class="col-sm-10">
+					<input type="id" class="form-control" id="type"
+						ng-model="locationSelection.type" ng-required="true" ng-minlength="1"
+						ng-change="edited(locationSelection)"></input>
+				</div>
+			</div>
+		</form>
+
+        <h3 ng-if="edgeSelection != null">Edit Edge(s)</h3>
+		<form class="form-horizontal" role="form"
+			ng-if="edgeSelection != null"
+			style="margin-top:25px">
+			
+			<h4><span class="label label-default label-large">{{edgeSelection.start.id}}&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;{{edgeSelection.end.id}}</span></h4>
+			
+			<div class="form-group">
+				<label for="weight" class="col-sm-2 control-label">Weight</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="weight"
+						ng-model="edgeSelection.weight" 
+						valid-number
+						></input>
+				</div>
+			</div>
+			<div class="form-group">
+			   <label for="heading1" class="col-sm-2 control-label">Angle</label>
+			   <div class="col-sm-10">
+				<input class="form-control" 
+				       id="heading1" 
+				       type="text" 
+				       ng-model="edgeSelection.angle" 
+				       disabled>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal" role="form"
+			ng-if="edge2Selection != null"
+			style="margin-top:25px">
+			<h4><span class="label label-default label-large">{{edge2Selection.start.id}}&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>&nbsp;{{edge2Selection.end.id}}</span></h4>
+			<div class="form-group">
+				<label for="weight" class="col-sm-2 control-label">Weight</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="weight"
+						ng-model="edge2Selection.weight" 
+						valid-number
+						></input>
+				</div>
+			</div>
+			<div class="form-group">
+			   <label for="heading2" class="col-sm-2 control-label">Angle</label>
+			   <div class="col-sm-10">
+				<input class="form-control" 
+				       id="heading2" 
+				       type="text" 
+				       ng-model="edge2Selection.angle" 
+				       disabled>
+				</div>
+			</div>
+		</form>
+		</p>
+
+	</div>
+</div>
+

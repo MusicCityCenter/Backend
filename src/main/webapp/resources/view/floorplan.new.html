@@ -1,0 +1,40 @@
+
+<div class="inner cover">
+	<h1 class="cover-heading">Create a floor plan.</h1>
+
+
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<form class="form" 
+		      role="form" 
+		      method="POST"
+		      style="text-align: left"
+		      enctype='multipart/form-data'
+		      action="/mcc/floorplan/mapping">
+			<div class="form-group">
+				<label for="floorplanId">ID </label> <input type="text"
+					class="form-control" id="floorplanId" name="floorplanId"
+					placeholder="Enter a floor plan ID" ng-model="floorplanId">
+			</div>
+			<div class="form-group">
+				<label for="scale">Image scale</label> <input type="text"
+					class="form-control" id="scale" name="scale" placeholder="Pixels per foot"
+					ng-model="imageScale" valid-number>
+			</div>
+
+			<div class="form-group">
+				<label for="image">Floor plan image</label> <input type="file" name="image"
+					id="image" ng-model="imageFile">
+
+			</div>
+
+			<p class="lead" style="text-align:center;">
+				<input type="submit" class="btn btn-lg btn-success" value="Create"></input>
+			</p>
+
+		</form>
+
+	</div>
+
+
+</div>
