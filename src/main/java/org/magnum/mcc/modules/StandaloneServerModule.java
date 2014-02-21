@@ -21,6 +21,7 @@ import org.magnum.mcc.building.guessers.MeasurementType;
 import org.magnum.mcc.building.guessers.UserLocationTypeFeedbackGuesser;
 import org.magnum.mcc.building.guessers.UserLocationsFeedbackGuesser;
 import org.magnum.mcc.building.persistence.BeaconsLoader;
+import org.magnum.mcc.building.persistence.EventLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageMappingJsonMarshaller;
 import org.magnum.mcc.building.persistence.FloorplanImageMappingLoader;
@@ -29,6 +30,7 @@ import org.magnum.mcc.building.persistence.FloorplanJsonMarshaller;
 import org.magnum.mcc.building.persistence.FloorplanLoader;
 import org.magnum.mcc.building.persistence.FloorplanMarshaller;
 import org.magnum.mcc.building.persistence.JDOBeaconsLoader;
+import org.magnum.mcc.building.persistence.JDOEventLoader;
 import org.magnum.mcc.building.persistence.JDOFloorplanImageLoader;
 import org.magnum.mcc.building.persistence.JDOFloorplanImageMappingLoader;
 import org.magnum.mcc.building.persistence.JDOFloorplanLoader;
@@ -59,6 +61,7 @@ public class StandaloneServerModule extends AbstractModule {
 		bind(FloorplanImageMappingMarshaller.class).to(FloorplanImageMappingJsonMarshaller.class);
 		bind(FloorplanImageLoader.class).to(JDOFloorplanImageLoader.class);
 		bind(BeaconsLoader.class).to(JDOBeaconsLoader.class);
+		bind(EventLoader.class).to(JDOEventLoader.class);
 		bind(ShortestPathSolver.class).to(Dijkstra.class);
 
 		// Configure the GuesserStrategies

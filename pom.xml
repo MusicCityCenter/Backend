@@ -220,9 +220,19 @@
 			<type>pom</type>
 		</dependency>
 		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
 			<groupId>javax.persistence</groupId>
 			<artifactId>persistence-api</artifactId>
 			<version>1.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.datanucleus</groupId>
+			<artifactId>datanucleus-jodatime</artifactId>
+			<version>3.2.1</version>
 		</dependency>
 	</dependencies>
 
@@ -260,6 +270,14 @@
 				<groupId>com.google.appengine</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>${appengine.target.version}</version>
+				<!-- <configuration>
+					<jvmFlags>
+						<jvmFlag>-Xdebug</jvmFlag>
+						<jvmFlag>-Xrunjdwp:transport=dt_socket,address=1044,server=y,suspend=y
+						</jvmFlag>
+					</jvmFlags>
+					<disableUpdateCheck>true</disableUpdateCheck>
+				</configuration> -->
 			</plugin>
 
 			<!-- Enhance all classes found within a entities folder. -->

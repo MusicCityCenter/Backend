@@ -29,12 +29,15 @@ import org.magnum.mcc.building.FloorplanMapping;
 import org.magnum.mcc.building.PathData;
 import org.magnum.mcc.building.persistence.BeaconsAtFloorplanLocation;
 import org.magnum.mcc.building.persistence.BeaconsLoader;
+import org.magnum.mcc.building.persistence.Event;
+import org.magnum.mcc.building.persistence.EventLoader;
 import org.magnum.mcc.building.persistence.FloorplanImage;
 import org.magnum.mcc.building.persistence.FloorplanImageLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageMappingLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageMappingMarshaller;
 import org.magnum.mcc.building.persistence.FloorplanLoader;
 import org.magnum.mcc.building.persistence.FloorplanMarshaller;
+import org.magnum.mcc.building.persistence.JDOEventLoader;
 import org.magnum.mcc.building.persistence.MCCObjectMapper;
 import org.magnum.mcc.modules.StandaloneServerModule;
 import org.magnum.mcc.paths.Path;
@@ -70,6 +73,8 @@ public class NavController {
 	private final BeaconsLoader beaconsLoader_;
 
 	private final FloorplanImageLoader imageLoader_;
+	
+	private final EventLoader eventLoader_;
 
 	private ShortestPathSolver solver_;
 
@@ -84,6 +89,7 @@ public class NavController {
 				.getInstance(FloorplanImageMappingMarshaller.class);
 		imageLoader_ = injector.getInstance(FloorplanImageLoader.class);
 		beaconsLoader_ = injector.getInstance(BeaconsLoader.class);
+		eventLoader_ = injector.getInstance(JDOEventLoader.class);
 	}
 
 	// A duplicate of the next method to make posting floorplans
@@ -315,6 +321,8 @@ public class NavController {
 		return beacons;
 	}
 
+	
+	
 	/**
 	 * Returns the shortest path from the given starting location to the given
 	 * ending location for the specified floorplan.
@@ -357,5 +365,87 @@ public class NavController {
 		
 		return pathData;
 	}
+	
+	/**
+	 * Returns the list of events that are taking place in the
+	 * building wtih the given floor plan on the specified date.
+	 * @param floorplanId
+	 * @param month
+	 * @param day
+	 * @param year
+	 * @return
+	 */
+	@RequestMapping(value="/events/{floorplanId}/on/{month}/{day}/{year}",method=RequestMethod.GET)
+	public @ResponseBody
+	Set<Event> getEventsOn(
+			@PathVariable("floorplanId") String floorplanId,
+			@PathVariable("month") int month, 
+			@PathVariable("day") int day,
+			@PathVariable("year") int year) {
+		Set<Event> events = eventLoader_.getEventsOn(floorplanId, month, day, year);
+		return events;
+	}
+	
+	/**
+	 * Add an event to the list of events for the specified building,
+	 * day, time, etc.
+	 * 
+	 * @param floorplanId
+	 * @param month
+	 * @param day
+	 * @param year
+	 * @return
+	 */
+	@RequestMapping(value="/events/{floorplanId}/{floorplanLocationId}/on/{month}/{day}/{year}/{start}/{end}",method=RequestMethod.POST)
+	public @ResponseBody
+	Event addEventOn(
+			@PathVariable("floorplanId") String floorplanId,
+			@PathVariable("floorplanLocationId") String floorplanLocationId,
+			@PathVariable("month") int month, 
+			@PathVariable("day") int day,
+			@PathVariable("year") int year,
+			@PathVariable("start") long start,
+			@PathVariable("end") long end,
+			@RequestParam("name") String name,
+			@RequestParam(value="id",required=false) String id,
+			@RequestParam("description") String desc) {
+		
+		Event evt = new Event();
+		if(id != null && id.trim().length() > 24){evt.setId(id);}
+		evt.setFloorplanLocationId(floorplanLocationId);
+		evt.setFloorplanId(floorplanId);
+		evt.setDay(day);
+		evt.setMonth(month);
+		evt.setYear(year);
+		evt.setStartTime(start);
+		evt.setEndTime(end);
+		evt.setName(name);
+		evt.setDescription(desc);
+		eventLoader_.saveEvent(evt);
+		
+		return evt;
+	}
 
+	
+	
+	/**
+	 * Add an event to the list of events for the specified building,
+	 * day, time, etc.
+	 * 
+	 * @param floorplanId
+	 * @param month
+	 * @param day
+	 * @param year
+	 * @return
+	 */
+	@RequestMapping(value="/events/delete/{floorplanId}/{id}",method=RequestMethod.POST)
+	public @ResponseBody
+	boolean deleteEvent(
+			@PathVariable("floorplanId") String floorplanId,
+			@PathVariable("id") String id) {
+		
+		eventLoader_.deleteEvent(id);
+		
+		return true;
+	}
 }

@@ -1,0 +1,97 @@
+
+<!-- Example row of columns -->
+<div class="row" style="text-align: left">
+	<div class="col-md-6">
+	  <div ng-if="loading">
+	     Loading events...
+	  </div>
+	  <div ng-if="!loading">
+	      <h3>Events on {{date}}:</h3>
+		  <div ng-repeat="event in events" style="border:1px solid #e1e1e8; border-radius:4px;background-color:#222;padding:10px;margin-top:15px">
+		    <div style="position:relative;top:10px;left:100%;margin-left:-30px;">
+		      <a href ng-click="deleteEvent(event)"><i class="glyphicon glyphicon-trash"></i></a>
+		    </div>
+		    <div style="width:100%">
+		      <div>
+		    	<h4><a href ng-click="selectEvent(event)">{{event.name}}</a>
+		        &nbsp; </h4>
+		      </div>
+		      
+		    </div>
+		    <p>Where: {{event.floorplanLocationId}}</p>
+		    <p>When:{{eventTime(event)}}</p>
+		    <p>{{event.description}}</p>
+		  </div>
+	  </div>
+	</div>
+	<div class="col-md-6">
+		<p>
+		<h4>
+			Events for: {{floorplanId}}<br></br> 
+			<div ng-include="'/resources/view/floorplan.buttons.html'"></div>
+		</h4>
+		</p>
+
+		<p style="margin-top: 50px">
+		<h3 ng-if="saving">Saving...</h3>
+		<form name="datepickerForm" class="form-inline" role="form">
+			<!-- Basic example -->
+			<div class="form-group"
+				ng-class="{'has-error': datepickerForm.date.$invalid}">
+				<label class="control-label"><i class="fa fa-calendar"></i>
+					<i class="glyphicon glyphicon-calendar"></i>Date</label> <input type="text" class="form-control"
+					ng-change="updateEvents()"
+					ng-disabled="saving"
+					ng-model="date" name="date" data-date-format="MM-dd-yyyy" data-date-type="string" data-autoclose="1" bs-datepicker></input>
+			</div>
+			<div class="form-group"
+				ng-class="{'has-error': timepickerForm.time.$invalid}">
+				<label class="control-label"><i class="fa fa-clock-o"></i>
+					<i class="glyphicon glyphicon-time"></i>Time </label> <input type="text" class="form-control" size="8"
+					ng-model="start" ng-disabled="saving" name="time" data-time-format="HH:mm" data-time-type="string" bs-timepicker></input> to <input
+					type="text" class="form-control" size="8" ng-model="end"
+					name="time" ng-disabled="saving" data-time-format="HH:mm" data-time-type="string" bs-timepicker></input>
+			</div>
+
+		</form>
+		<hr>
+
+		<form class="form-horizontal" role="form">
+			<h3>Add Event</h3>
+			<div class="form-group">
+				<label for="loc" class="col-sm-2 control-label">Location</label>
+				<div class="col-sm-10">
+					<select class="form-control" id="loc" ng-model="locationId"
+						ng-required="true" ng-disabled="saving"
+						ng-options="loc.id for loc in floorplan.locations"></select>
+				</div>
+			</div>
+			<!-- Basic example -->
+		</form>
+
+
+
+		<form class="form-horizontal" role="form">
+			<div class="form-group" style="margin-top: 15px">
+				<label for="name" class="col-sm-2 control-label">Name</label>
+				<div class="col-sm-10">
+					<input type="name" class="form-control" id="id" ng-model="name"
+						ng-required="true" ng-disabled="saving" ng-minlength="1"></input>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="desc" class="col-sm-2 control-label">Description</label>
+				<div class="col-sm-10">
+					<textarea type="id" class="form-control" id="desc"
+						ng-model="description" ng-disabled="saving" ng-required="true" ng-minlength="1"></textarea>
+				</div>
+			</div>
+		</form>
+		</p>
+		<p>
+		<a href class="btn btn-lg btn-success" ng-disabled="saving" ng-click="saveEvent()">Add</a>
+		</p>
+
+	</div>
+</div>
+

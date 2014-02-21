@@ -1,7 +1,7 @@
 var theApp = angular
 		.module(
 				'floorplan.editor',
-				[ 'ngRoute'],
+				[ 'ngRoute','mgcrea.ngStrap'],
 				function($httpProvider) {
 					// Use x-www-form-urlencoded Content-Type
 					$httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
@@ -101,6 +101,10 @@ theApp.config(['$routeProvider',
       when('/beacons/:floorplanId', {
           templateUrl: '/resources/view/floorplan.beacons.html',
           controller: 'beaconsEditor'
+      }).
+      when('/events/:floorplanId', {
+          templateUrl: '/resources/view/floorplan.events.editor.html',
+          controller: 'eventsEditor'
       }).
       otherwise({
         redirectTo: '/floorplan/mcc'
