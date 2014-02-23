@@ -19,7 +19,10 @@
 
 	<properties>
 		<appengine.app.version>1</appengine.app.version>
-		<appengine.target.version>1.8.4</appengine.target.version>
+		<appengine.target.version>1.8.9</appengine.target.version>
+		<gae.version>1.8.9</gae.version>
+	    <webappDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF</webappDirectory>
+	    <gae.home>${settings.localRepository}/com/google/appengine/appengine-java-sdk/${gae.version}/appengine-java-sdk-${gae.version}</gae.home>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>4.0.0.RELEASE</spring.version>
 		<jackson.version>2.2.3</jackson.version>
@@ -265,6 +268,20 @@
 					</webResources>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+                <groupId>net.kindleit</groupId>
+                <artifactId>maven-gae-plugin</artifactId>
+                <version>0.9.5</version>
+                <dependencies>
+                  <dependency>
+                    <groupId>net.kindleit</groupId>
+                    <artifactId>gae-runtime</artifactId>
+                    <version>${gae.version}</version>
+                    <type>pom</type>
+                  </dependency>
+                </dependencies>
+            </plugin>
 
 			<plugin>
 				<groupId>com.google.appengine</groupId>
@@ -278,7 +295,7 @@
 					</jvmFlags>
 					<disableUpdateCheck>true</disableUpdateCheck>
 				</configuration> -->
-			</plugin>
+			</plugin> 
 
 			<!-- Enhance all classes found within a entities folder. -->
 			<plugin>
