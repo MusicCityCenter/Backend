@@ -38,7 +38,8 @@
 					 start: location.edges[i].start.id,
 					 end: location.edges[i].end.id,
 					 length: location.edges[i].weight,
-					 angle: location.edges[i].angle
+					 angle: location.edges[i].angle,
+					 image: location.edges[i].image
 				  }
 				  mf.edges.push(me);
 			  }

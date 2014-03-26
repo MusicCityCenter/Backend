@@ -54,17 +54,18 @@
     	  }
     	  
     	  this.connectLocations = function(start,end,weight){
-    		  var edge = new FloorplanEdge(start,end,weight);
+    		  var edge = new FloorplanEdge(start,end,weight,null);
     		  this.edges.push(edge);
     		  console.log("Adding edge from "+edge.start.id+" to "+edge.end.id);
     		  return edge;
     	  }
       }
       
-      var FloorplanEdge = function(start,end,weight){
+      var FloorplanEdge = function(start,end,weight,image){
     	  this.start = start;
     	  this.end = end;
     	  this.weight = (weight == 0)? start.distanceTo(end) : weight;
+    	  this.image=image;
     	  this.isEdge = true;
     	  
     	  //this.angle = Math.atan((end.y - start.y) / (end.x - start.x)) * 180 / Math.PI;
