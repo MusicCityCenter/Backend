@@ -20,6 +20,7 @@ import java.util.Map;
 import java.util.Set;
 
 import org.magnum.mcc.paths.DirectedGraph;
+import org.magnum.mcc.paths.EdgeData;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.SetMultimap;
@@ -97,22 +98,16 @@ public class Floorplan {
 		return typesByName_.get(name);
 	}
 
-	public void connectsToOneWay(FloorplanLocation from, FloorplanLocation to,
-			double weight) {
-		graph_.addEdge(from, to, weight);
-	}
-
 	public void connectsTo(FloorplanLocation from, FloorplanLocation to,
-			double weight) {
-		connectsToOneWay(from, to, weight);
-		connectsToOneWay(to, from, weight);
+			double weight, String imageId) {
+		graph_.addEdge(from, to, weight, imageId);
 	}
 
 	public Set<FloorplanLocation> getLocations() {
 		return locations_;
 	}
 
-	public Map<FloorplanLocation, Double> getEdgesFrom(FloorplanLocation fpl) {
+	public Map<FloorplanLocation, EdgeData> getEdgesFrom(FloorplanLocation fpl) {
 		return graph_.edgesFrom(fpl);
 	}
 

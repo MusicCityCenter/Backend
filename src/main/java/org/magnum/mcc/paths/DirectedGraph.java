@@ -14,7 +14,7 @@ public class DirectedGraph<T> implements Iterable<T> {
     /* A map from nodes in the graph to sets of outgoing edges.  Each
      * set of edges is represented by a map from edges to doubles.
      */
-    private final Map<T, Map<T, Double>> mGraph = new HashMap<T, Map<T, Double>>();
+    private final Map<T, Map<T, EdgeData>> mGraph = new HashMap<T, Map<T, EdgeData>>();
 
     /**
      * Adds a new node to the graph.  If the node already exists, this
@@ -29,7 +29,7 @@ public class DirectedGraph<T> implements Iterable<T> {
             return false;
 
         /* Otherwise, add the node with an empty set of outgoing edges. */
-        mGraph.put(node, new HashMap<T, Double>());
+        mGraph.put(node, new HashMap<T, EdgeData>());
         return true;
     }
 
@@ -47,8 +47,8 @@ public class DirectedGraph<T> implements Iterable<T> {
      *                                do not exist.
      */
     public void addDualEdge(T start, T dest, double length) {
-       addEdge(start,dest,length);
-       addEdge(dest,start,length);
+       addEdge(start,dest,length, null);
+       addEdge(dest,start,length, null);
     }
     
     /**
@@ -63,13 +63,13 @@ public class DirectedGraph<T> implements Iterable<T> {
      * @throws NoSuchElementException If either the start or destination nodes
      *                                do not exist.
      */
-    public void addEdge(T start, T dest, double length) {
+    public void addEdge(T start, T dest, double length, String imageId) {
         /* Confirm both endpoints exist. */
         if (!mGraph.containsKey(start) || !mGraph.containsKey(dest))
             throw new NoSuchElementException("Both nodes must be in the graph.");
 
         /* Add the edge. */
-        mGraph.get(start).put(dest, length);
+        mGraph.get(start).put(dest, new EdgeData(length, imageId));
     }
 
     /**
@@ -97,9 +97,9 @@ public class DirectedGraph<T> implements Iterable<T> {
      * @return An immutable view of the edges leaving that node.
      * @throws NoSuchElementException If the node does not exist.
      */
-    public Map<T, Double> edgesFrom(T node) {
+    public Map<T, EdgeData> edgesFrom(T node) {
         /* Check that the node exists. */
-        Map<T, Double> arcs = mGraph.get(node);
+        Map<T, EdgeData> arcs = mGraph.get(node);
         if (arcs == null)
             throw new NoSuchElementException("Source node does not exist.");
 

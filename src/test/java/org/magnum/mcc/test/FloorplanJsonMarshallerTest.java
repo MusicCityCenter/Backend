@@ -42,10 +42,10 @@ public class FloorplanJsonMarshallerTest {
 		FloorplanLocation uhall = floorPlan_.addLocation("upstairsHallway", hallwayType);
 		floorPlan_.addLocation("downstairsHallway", hallwayType);
 		
-		floorPlan_.connectsTo(bathroom1, bedroom1, 1);
-		floorPlan_.connectsTo(bedroom1, uhall, 1);
-		floorPlan_.connectsTo(bedroom2, uhall, 1);
-		floorPlan_.connectsTo(bedroom3, uhall, 1);
+		floorPlan_.connectsTo(bathroom1, bedroom1, 1,null);
+		floorPlan_.connectsTo(bedroom1, uhall, 1,null);
+		floorPlan_.connectsTo(bedroom2, uhall, 1,null);
+		floorPlan_.connectsTo(bedroom3, uhall, 1,null);
 	}
 	
 	@Test

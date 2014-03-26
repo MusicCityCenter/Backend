@@ -71,11 +71,12 @@ public class FloorplanDeserializer extends JsonDeserializer<Floorplan> {
 		String start = edge.get("start").textValue();
 		String end = edge.get("end").textValue();
 		Double len = edge.get("length").doubleValue();
+		String imageId = edge.get("imageId").textValue();
 
 		FloorplanLocation s = floorplan.locationById(start);
 		FloorplanLocation e = floorplan.locationById(end);
 
-		floorplan.connectsTo(s, e, len);
+		floorplan.connectsTo(s, e, len, imageId);
 	}
 
 	private void deserializeLocations(JsonNode node, Floorplan floorplan, Map<String,LocationType> types) {

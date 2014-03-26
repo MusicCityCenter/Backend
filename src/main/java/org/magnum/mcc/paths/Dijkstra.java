@@ -79,7 +79,7 @@ public final class Dijkstra implements ShortestPathSolver {
             result.put(curr.getValue(), curr.getPriority());
 
             /* Update the priorities of all of its edges. */
-            for (Map.Entry<T, Double> arc : graph.edgesFrom(curr.getValue()).entrySet()) {
+            for (Map.Entry<T, EdgeData> arc : graph.edgesFrom(curr.getValue()).entrySet()) {
                 /* If we already know the shortest path from the source to
                  * this node, don't add the edge.
                  */
@@ -88,7 +88,7 @@ public final class Dijkstra implements ShortestPathSolver {
                 /* Compute the cost of the path from the source to this node,
                  * which is the cost of this node plus the cost of this edge.
                  */
-                double pathCost = curr.getPriority() + arc.getValue();
+                double pathCost = curr.getPriority() + arc.getValue().getLength();
 
                 /* If the length of the best-known path from the source to
                  * this node is longer than this potential path cost, update

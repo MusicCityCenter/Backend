@@ -12,6 +12,7 @@ import java.util.Map;
 import org.magnum.mcc.building.Floorplan;
 import org.magnum.mcc.building.FloorplanLocation;
 import org.magnum.mcc.building.LocationType;
+import org.magnum.mcc.paths.EdgeData;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.core.JsonGenerator;
@@ -78,22 +79,30 @@ public class FloorplanSerializer extends JsonSerializer<Floorplan> {
 
 		for (FloorplanLocation loc : floorplan.getLocations()) {
 
-			Map<FloorplanLocation, Double> edges = floorplan.getEdgesFrom(loc);
+			Map<FloorplanLocation, EdgeData> edges = floorplan.getEdgesFrom(loc);
 			for (FloorplanLocation end : edges.keySet()) {
-				Double w = edges.get(end);
-				serializeFloorplanEdge(gen, loc, end, w);
+				EdgeData eData = edges.get(end);
+				Double w = eData.getLength();
+				String imageId = eData.getImageId();
+				serializeFloorplanEdge(gen, loc, end, w, imageId);
+				
+				//corresponding edge
+				EdgeData other = floorplan.getEdgesFrom(end).get(loc);
+				String otherImage = other.getImageId();
+				serializeFloorplanEdge(gen, end, loc, w, otherImage);
 			}
 		}
 		gen.writeEndArray();
 	}
 
 	private void serializeFloorplanEdge(JsonGenerator gen,
-			FloorplanLocation loc, FloorplanLocation end, Double w)
+			FloorplanLocation loc, FloorplanLocation end, Double w, String edgeImageId)
 			throws IOException, JsonGenerationException {
 		gen.writeStartObject();
 		gen.writeStringField("start", loc.getId());
 		gen.writeStringField("end", end.getId());
 		gen.writeNumberField("length", w);
+		gen.writeStringField("image", edgeImageId);
 		gen.writeEndObject();
 	}
 

@@ -19,9 +19,6 @@ public class Node {
 
 	private String id_;
 
-	public Node(){
-		
-	}
 	
 	public Node(String id){
 		checkArgument(id != null, "Each node must have a non-null id");
