@@ -131,6 +131,10 @@ http://appspot.com (apps that have been deployed to AppEngine)
    
    https://appengine.google.com/start/createapp?
    
+   Next, right-click on the root of your project -> Properties -> Google -> Web Application. Click the check-box for "This project has a WAR directory" and choose "src/main/webapp" Click ok.
+
+   The project may have issues deploying if the maven dependencies are not last in the build path.
+
    Then, right-click on the root of your project -> Google -> Deploy to AppEngine. Click the
    link to AppEngine settings to set the application ID that you set in the previous step
    (if needed). Your app will be packaged, deployed, and launched in Google's cloud in a

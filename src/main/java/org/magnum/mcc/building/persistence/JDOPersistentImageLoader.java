@@ -15,17 +15,17 @@ import org.apache.commons.io.IOUtils;
 import com.google.appengine.api.datastore.Blob;
 import com.google.inject.Inject;
 
-public class JDOFloorplanImageLoader implements FloorplanImageLoader {
+public class JDOPersistentImageLoader implements PersistentImageLoader {
 
 	@Inject
-	public JDOFloorplanImageLoader() {
+	public JDOPersistentImageLoader() {
 		super();
 	}
 
 	@Override
-	public FloorplanImage load(String id) {
+	public PersistentImage load(String id) {
 		final PersistenceManager pm = getPersistenceManager();
-		final FloorplanImage sf = pm.getObjectById(FloorplanImage.class, id);
+		final PersistentImage sf = pm.getObjectById(PersistentImage.class, id);
 		return sf;
 	}
 
@@ -33,7 +33,7 @@ public class JDOFloorplanImageLoader implements FloorplanImageLoader {
 	public void save(String id, Double scale, InputStream img) {
 		final PersistenceManager pm = getPersistenceManager();
 		try {
-			final FloorplanImage sf = new FloorplanImage();
+			final PersistentImage sf = new PersistentImage();
 			sf.setId(id);
 			sf.setData(new Blob(IOUtils.toByteArray(img)));
 			sf.setScale(scale);

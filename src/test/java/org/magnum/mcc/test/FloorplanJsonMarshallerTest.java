@@ -9,12 +9,15 @@ package org.magnum.mcc.test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+import java.util.Map;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.magnum.mcc.building.Floorplan;
 import org.magnum.mcc.building.FloorplanLocation;
 import org.magnum.mcc.building.LocationType;
 import org.magnum.mcc.building.persistence.FloorplanJsonMarshaller;
+import org.magnum.mcc.paths.EdgeData;
 
 public class FloorplanJsonMarshallerTest {
 
@@ -42,10 +45,14 @@ public class FloorplanJsonMarshallerTest {
 		FloorplanLocation uhall = floorPlan_.addLocation("upstairsHallway", hallwayType);
 		floorPlan_.addLocation("downstairsHallway", hallwayType);
 		
-		floorPlan_.connectsTo(bathroom1, bedroom1, 1);
-		floorPlan_.connectsTo(bedroom1, uhall, 1);
-		floorPlan_.connectsTo(bedroom2, uhall, 1);
-		floorPlan_.connectsTo(bedroom3, uhall, 1);
+		floorPlan_.connectsTo(bathroom1, bedroom1, 1,"");
+		floorPlan_.connectsTo(bedroom1, uhall, 1,"");
+		floorPlan_.connectsTo(bedroom2, uhall, 1,"");
+		floorPlan_.connectsTo(bedroom3, uhall, 1,"");
+		floorPlan_.connectsTo(bedroom1,bathroom1, 1,"");
+		floorPlan_.connectsTo(uhall,bedroom1,  1,"");
+		floorPlan_.connectsTo(uhall,bedroom2, 1,"");
+		floorPlan_.connectsTo(uhall,bedroom3, 1,"");
 	}
 	
 	@Test
@@ -58,7 +65,13 @@ public class FloorplanJsonMarshallerTest {
 		assertThat(in.getRootType(), is(floorPlan_.getRootType()));
 		
 		for(FloorplanLocation loc : in.getLocations()){
-			assertThat(in.getEdgesFrom(loc), is(floorPlan_.getEdgesFrom(loc)));
+			Map<FloorplanLocation, EdgeData> testEdges = floorPlan_.getEdgesFrom(loc);
+			Map<FloorplanLocation, EdgeData> actualEdges = in.getEdgesFrom(loc);
+			for(FloorplanLocation location : testEdges.keySet()){
+				assertThat(testEdges.get(location).getLength(), is(actualEdges.get(location).getLength()));
+				assertThat(testEdges.get(location).getImageId(), is(actualEdges.get(location).getImageId()));
+			}
+			//assertThat(in.getEdgesFrom(loc), is(floorPlan_.getEdgesFrom(loc)));
 		}
 		
 		String obj2 = marshaller_.toString(in);

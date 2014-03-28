@@ -32,13 +32,13 @@ import org.magnum.mcc.building.persistence.BeaconsLoader;
 import org.magnum.mcc.building.persistence.Event;
 import org.magnum.mcc.building.persistence.EventLoader;
 import org.magnum.mcc.building.persistence.FloorplanImage;
-import org.magnum.mcc.building.persistence.FloorplanImageLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageMappingLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageMappingMarshaller;
 import org.magnum.mcc.building.persistence.FloorplanLoader;
 import org.magnum.mcc.building.persistence.FloorplanMarshaller;
 import org.magnum.mcc.building.persistence.JDOEventLoader;
 import org.magnum.mcc.building.persistence.MCCObjectMapper;
+import org.magnum.mcc.building.persistence.PersistentImageLoader;
 import org.magnum.mcc.modules.StandaloneServerModule;
 import org.magnum.mcc.paths.Path;
 import org.magnum.mcc.paths.ShortestPathSolver;
@@ -72,7 +72,7 @@ public class NavController {
 
 	private final BeaconsLoader beaconsLoader_;
 
-	private final FloorplanImageLoader imageLoader_;
+	private final PersistentImageLoader imageLoader_;
 	
 	private final EventLoader eventLoader_;
 
@@ -87,7 +87,7 @@ public class NavController {
 				.getInstance(FloorplanImageMappingLoader.class);
 		imageMappingMarshaller_ = injector
 				.getInstance(FloorplanImageMappingMarshaller.class);
-		imageLoader_ = injector.getInstance(FloorplanImageLoader.class);
+		imageLoader_ = injector.getInstance(PersistentImageLoader.class);
 		beaconsLoader_ = injector.getInstance(BeaconsLoader.class);
 		eventLoader_ = injector.getInstance(JDOEventLoader.class);
 	}
@@ -260,7 +260,7 @@ public class NavController {
 			@PathVariable("floorplanId") String floorplanId,
 			HttpServletResponse response) throws Exception {
 
-		FloorplanImage img = imageLoader_.load(floorplanId);
+		FloorplanImage img = (FloorplanImage)imageLoader_.load(floorplanId);
 
 		if (img == null) {
 			response.sendError(404, "Image not found");
