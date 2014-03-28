@@ -449,13 +449,13 @@ public class NavController {
 	}
 
 	@RequestMapping(value = "/floorplan/edge/image", method = RequestMethod.POST)
-	public void setEdgeImage(
-	@RequestParam("floorplanId") String floorplanId,
-	@RequestParam("startLocationId") String start,
-	@RequestParam("endLocationId") String end,
-	@RequestParam("image") GMultipartFile image,
+	public void setEdgeImage(@RequestParam("floorplanId") String floorplanId,
+			@RequestParam("startLocationId") String start,
+			@RequestParam("endLocationId") String end,
+			@RequestParam("image") GMultipartFile image,
+			HttpServletResponse response) throws Exception {
 
-	HttpServletResponse response) throws Exception {
+		System.out.print("Set edge image....[" + start + "-->" + end + "]");
 
 		String encodedFloorplanId = URLEncoder.encode(floorplanId, "UTF-8");
 
@@ -463,8 +463,7 @@ public class NavController {
 		imageLoader_.save(edgeId, 1.0, image.getInputStream());
 
 		response.sendRedirect("/floorplan.editor.html#/floorplan/"
-
-		+ encodedFloorplanId);
+				+ encodedFloorplanId);
 
 	}
 
@@ -474,31 +473,19 @@ public class NavController {
 	 * 
 	 * @return
 	 */
-	@RequestMapping(value = "/image/edge/{floorplanId}/{startLocationId}/{endLocationId}"
-
-	, method = RequestMethod.GET)
-	public void getEdgeImage(
-
-	@PathVariable("floorplanId") String floorplanId,
-
-	@PathVariable("startLocationId") String start,
-
-	@PathVariable("endLocationId") String end,
-
-	HttpServletResponse response) throws Exception {
+	@RequestMapping(value = "/image/edge/{floorplanId}/{startLocationId}/{endLocationId}", method = RequestMethod.GET)
+	public void getEdgeImage(@PathVariable("floorplanId") String floorplanId,
+			@PathVariable("startLocationId") String start,
+			@PathVariable("endLocationId") String end,
+			HttpServletResponse response) throws Exception {
 
 		String id = getEdgeId(floorplanId, start, end);
-
 		FloorplanImage img = (FloorplanImage) imageLoader_.load(id);
 
 		if (img == null) {
-
 			response.sendError(404, "Image not found");
-
 		} else {
-
 			response.getOutputStream().write(img.getData().getBytes());
-
 		}
 	}
 }
