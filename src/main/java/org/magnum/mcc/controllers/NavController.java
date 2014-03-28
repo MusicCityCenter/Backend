@@ -38,7 +38,7 @@ import org.magnum.mcc.building.persistence.FloorplanLoader;
 import org.magnum.mcc.building.persistence.FloorplanMarshaller;
 import org.magnum.mcc.building.persistence.JDOEventLoader;
 import org.magnum.mcc.building.persistence.MCCObjectMapper;
-import org.magnum.mcc.building.persistence.PersistentImageLoader;
+import org.magnum.mcc.building.persistence.FloorplanImageLoader;
 import org.magnum.mcc.modules.StandaloneServerModule;
 import org.magnum.mcc.paths.Path;
 import org.magnum.mcc.paths.ShortestPathSolver;
@@ -72,8 +72,8 @@ public class NavController {
 
 	private final BeaconsLoader beaconsLoader_;
 
-	private final PersistentImageLoader imageLoader_;
-	
+	private final FloorplanImageLoader imageLoader_;
+
 	private final EventLoader eventLoader_;
 
 	private ShortestPathSolver solver_;
@@ -87,7 +87,7 @@ public class NavController {
 				.getInstance(FloorplanImageMappingLoader.class);
 		imageMappingMarshaller_ = injector
 				.getInstance(FloorplanImageMappingMarshaller.class);
-		imageLoader_ = injector.getInstance(PersistentImageLoader.class);
+		imageLoader_ = injector.getInstance(FloorplanImageLoader.class);
 		beaconsLoader_ = injector.getInstance(BeaconsLoader.class);
 		eventLoader_ = injector.getInstance(JDOEventLoader.class);
 	}
@@ -204,19 +204,17 @@ public class NavController {
 				+ encodedFloorplanId);
 	}
 
-	
 	/**
-	 * Every time that the floor plan is updated, we need to check
-	 * if:
+	 * Every time that the floor plan is updated, we need to check if:
 	 * 
-	 * 1. Any existing mappings of beacons to locations are no longer
-	 *    valid because one or more locations was removed
-	 *    
+	 * 1. Any existing mappings of beacons to locations are no longer valid
+	 * because one or more locations was removed
+	 * 
 	 * 2. Any new locations don't have BeaconsAtFloorplanLocation objects
-	 *    persisted yet
-	 *    
-	 * Both of these cases are corrected in this sync. The sync is expensive
-	 * on writes but avoids edge cases and additional client logic on reads.
+	 * persisted yet
+	 * 
+	 * Both of these cases are corrected in this sync. The sync is expensive on
+	 * writes but avoids edge cases and additional client logic on reads.
 	 * 
 	 * @param floorplanId
 	 * @param nw
@@ -224,10 +222,11 @@ public class NavController {
 	private void syncFloorplanAndBeacons(String floorplanId, Floorplan nw) {
 		try {
 			Floorplan old = null;
-			
-			try{
+
+			try {
 				old = floorplanLoader_.load(floorplanId);
-			}catch(Exception e){}
+			} catch (Exception e) {
+			}
 
 			if (old != null) {
 				for (FloorplanLocation ol : old.getLocations()) {
@@ -260,7 +259,7 @@ public class NavController {
 			@PathVariable("floorplanId") String floorplanId,
 			HttpServletResponse response) throws Exception {
 
-		FloorplanImage img = (FloorplanImage)imageLoader_.load(floorplanId);
+		FloorplanImage img = imageLoader_.load(floorplanId);
 
 		if (img == null) {
 			response.sendError(404, "Image not found");
@@ -321,8 +320,6 @@ public class NavController {
 		return beacons;
 	}
 
-	
-	
 	/**
 	 * Returns the shortest path from the given starting location to the given
 	 * ending location for the specified floorplan.
@@ -345,50 +342,32 @@ public class NavController {
 
 		ShortestPaths<FloorplanLocation> paths = solver_.shortestPaths(
 				fp.asGraph(), source);
-		
+
 		FloorplanImageMapping mapping = imageMappingLoader_.load(floorplanId);
 
-		// A quick hack to allow for edges to later be returned rather than nodes
+		// A quick hack to allow for edges to later be returned rather than
+		// nodes
 		Path<FloorplanLocation> path = paths.getShortestPath(end);
 		List<PathData> pathData = new ArrayList<PathData>();
-		
+
 		FloorplanLocation prev = null;
-		for(FloorplanLocation fl : path){
-			if(prev != null){
-				FloorplanLocationEdge edge = new FloorplanLocationEdge(prev, fl, false, 0);
+		for (FloorplanLocation fl : path) {
+			if (prev != null) {
+				FloorplanLocationEdge edge = new FloorplanLocationEdge(prev,
+						fl, false, 0);
 				double angle = mapping.getEdgeAngle(edge);
 				double dist = mapping.getEdgeLength(edge);
 				pathData.add(new PathData(prev.getId(), fl.getId(), dist, angle));
 			}
 			prev = fl;
 		}
-		
+
 		return pathData;
 	}
-	
+
 	/**
-	 * Returns the list of events that are taking place in the
-	 * building wtih the given floor plan on the specified date.
-	 * @param floorplanId
-	 * @param month
-	 * @param day
-	 * @param year
-	 * @return
-	 */
-	@RequestMapping(value="/events/{floorplanId}/on/{month}/{day}/{year}",method=RequestMethod.GET)
-	public @ResponseBody
-	Set<Event> getEventsOn(
-			@PathVariable("floorplanId") String floorplanId,
-			@PathVariable("month") int month, 
-			@PathVariable("day") int day,
-			@PathVariable("year") int year) {
-		Set<Event> events = eventLoader_.getEventsOn(floorplanId, month, day, year);
-		return events;
-	}
-	
-	/**
-	 * Add an event to the list of events for the specified building,
-	 * day, time, etc.
+	 * Returns the list of events that are taking place in the building wtih the
+	 * given floor plan on the specified date.
 	 * 
 	 * @param floorplanId
 	 * @param month
@@ -396,22 +375,40 @@ public class NavController {
 	 * @param year
 	 * @return
 	 */
-	@RequestMapping(value="/events/{floorplanId}/{floorplanLocationId}/on/{month}/{day}/{year}/{start}/{end}",method=RequestMethod.POST)
+	@RequestMapping(value = "/events/{floorplanId}/on/{month}/{day}/{year}", method = RequestMethod.GET)
 	public @ResponseBody
-	Event addEventOn(
-			@PathVariable("floorplanId") String floorplanId,
+	Set<Event> getEventsOn(@PathVariable("floorplanId") String floorplanId,
+			@PathVariable("month") int month, @PathVariable("day") int day,
+			@PathVariable("year") int year) {
+		Set<Event> events = eventLoader_.getEventsOn(floorplanId, month, day,
+				year);
+		return events;
+	}
+
+	/**
+	 * Add an event to the list of events for the specified building, day, time,
+	 * etc.
+	 * 
+	 * @param floorplanId
+	 * @param month
+	 * @param day
+	 * @param year
+	 * @return
+	 */
+	@RequestMapping(value = "/events/{floorplanId}/{floorplanLocationId}/on/{month}/{day}/{year}/{start}/{end}", method = RequestMethod.POST)
+	public @ResponseBody
+	Event addEventOn(@PathVariable("floorplanId") String floorplanId,
 			@PathVariable("floorplanLocationId") String floorplanLocationId,
-			@PathVariable("month") int month, 
-			@PathVariable("day") int day,
-			@PathVariable("year") int year,
-			@PathVariable("start") long start,
-			@PathVariable("end") long end,
-			@RequestParam("name") String name,
-			@RequestParam(value="id",required=false) String id,
+			@PathVariable("month") int month, @PathVariable("day") int day,
+			@PathVariable("year") int year, @PathVariable("start") long start,
+			@PathVariable("end") long end, @RequestParam("name") String name,
+			@RequestParam(value = "id", required = false) String id,
 			@RequestParam("description") String desc) {
-		
+
 		Event evt = new Event();
-		if(id != null && id.trim().length() > 24){evt.setId(id);}
+		if (id != null && id.trim().length() > 24) {
+			evt.setId(id);
+		}
 		evt.setFloorplanLocationId(floorplanLocationId);
 		evt.setFloorplanId(floorplanId);
 		evt.setDay(day);
@@ -422,15 +419,13 @@ public class NavController {
 		evt.setName(name);
 		evt.setDescription(desc);
 		eventLoader_.saveEvent(evt);
-		
+
 		return evt;
 	}
 
-	
-	
 	/**
-	 * Add an event to the list of events for the specified building,
-	 * day, time, etc.
+	 * Add an event to the list of events for the specified building, day, time,
+	 * etc.
 	 * 
 	 * @param floorplanId
 	 * @param month
@@ -438,14 +433,72 @@ public class NavController {
 	 * @param year
 	 * @return
 	 */
-	@RequestMapping(value="/events/delete/{floorplanId}/{id}",method=RequestMethod.POST)
+	@RequestMapping(value = "/events/delete/{floorplanId}/{id}", method = RequestMethod.POST)
 	public @ResponseBody
-	boolean deleteEvent(
-			@PathVariable("floorplanId") String floorplanId,
+	boolean deleteEvent(@PathVariable("floorplanId") String floorplanId,
 			@PathVariable("id") String id) {
-		
+
 		eventLoader_.deleteEvent(id);
-		
+
 		return true;
+	}
+
+	private String getEdgeId(String floorplanId, String startLocationId,
+			String endLocationId) {
+		return floorplanId + "." + startLocationId + "." + endLocationId;
+	}
+
+	@RequestMapping(value = "/floorplan/edge/image", method = RequestMethod.POST)
+	public void setEdgeImage(
+	@RequestParam("floorplanId") String floorplanId,
+	@RequestParam("startLocationId") String start,
+	@RequestParam("endLocationId") String end,
+	@RequestParam("image") GMultipartFile image,
+
+	HttpServletResponse response) throws Exception {
+
+		String encodedFloorplanId = URLEncoder.encode(floorplanId, "UTF-8");
+
+		String edgeId = getEdgeId(floorplanId, start, end);
+		imageLoader_.save(edgeId, 1.0, image.getInputStream());
+
+		response.sendRedirect("/floorplan.editor.html#/floorplan/"
+
+		+ encodedFloorplanId);
+
+	}
+
+	/**
+	 * Retrieve an image for an edge.
+	 * 
+	 * 
+	 * @return
+	 */
+	@RequestMapping(value = "/image/edge/{floorplanId}/{startLocationId}/{endLocationId}"
+
+	, method = RequestMethod.GET)
+	public void getEdgeImage(
+
+	@PathVariable("floorplanId") String floorplanId,
+
+	@PathVariable("startLocationId") String start,
+
+	@PathVariable("endLocationId") String end,
+
+	HttpServletResponse response) throws Exception {
+
+		String id = getEdgeId(floorplanId, start, end);
+
+		FloorplanImage img = (FloorplanImage) imageLoader_.load(id);
+
+		if (img == null) {
+
+			response.sendError(404, "Image not found");
+
+		} else {
+
+			response.getOutputStream().write(img.getData().getBytes());
+
+		}
 	}
 }

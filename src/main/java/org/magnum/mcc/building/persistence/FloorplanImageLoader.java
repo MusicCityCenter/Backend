@@ -8,9 +8,9 @@ package org.magnum.mcc.building.persistence;
 
 import java.io.InputStream;
 
-public interface PersistentImageLoader {
+public interface FloorplanImageLoader {
 
-	public PersistentImage load(String id);
+	public FloorplanImage load(String id);
 	
 	public void save(String id, Double scale, InputStream data);
 	
