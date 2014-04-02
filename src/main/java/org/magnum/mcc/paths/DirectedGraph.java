@@ -8,13 +8,18 @@ package org.magnum.mcc.paths;
  * real-valued length.  Internally, the class is represented by an adjacency 
  * list.
  */
-import java.util.*; // For HashMap
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.TreeMap;
+import java.util.Map;
+import java.util.HashMap;
 
 public class DirectedGraph<T> implements Iterable<T> {
     /* A map from nodes in the graph to sets of outgoing edges.  Each
      * set of edges is represented by a map from edges to doubles.
      */
-    private final Map<T, Map<T, EdgeData>> mGraph = new HashMap<T, Map<T, EdgeData>>();
+    private final Map<T, Map<T, EdgeData>> mGraph = new TreeMap<T, Map<T, EdgeData>>();
 
     /**
      * Adds a new node to the graph.  If the node already exists, this

@@ -15,7 +15,7 @@ import static com.google.common.base.Preconditions.checkArgument;
  * @author jules
  *
  */
-public class Node {
+public class Node implements Comparable{
 
 	private String id_;
 
@@ -38,6 +38,11 @@ public class Node {
 		checkArgument(id != null, "Each node must have a non-null id");
 		
 		id_ = id;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		return this.id_.compareTo(((Node)o).id_);
 	}
 
 }

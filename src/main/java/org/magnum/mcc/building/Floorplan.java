@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.magnum.mcc.paths.DirectedGraph;
 import org.magnum.mcc.paths.EdgeData;
@@ -36,7 +37,7 @@ import com.google.common.collect.SetMultimap;
  */
 public class Floorplan {
 
-	private final Set<FloorplanLocation> locations_ = new HashSet<FloorplanLocation>();
+	private final Set<FloorplanLocation> locations_ = new TreeSet<FloorplanLocation>();
 
 	private final DirectedGraph<FloorplanLocation> graph_ = new DirectedGraph<FloorplanLocation>();
 
