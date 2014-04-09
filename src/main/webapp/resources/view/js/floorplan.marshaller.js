@@ -37,7 +37,7 @@
 				  var me = {
 					 start: location.edges[i].start.id,
 					 end: location.edges[i].end.id,
-					 length: location.edges[i].weight,
+					 weight: location.edges[i].weight,
 					 angle: location.edges[i].angle,
 					 image: location.edges[i].image
 				  }
@@ -81,7 +81,7 @@
 			  var edge = edges[i];
 			  var start = floorplan.nodes[edge.start];
 			  var end = floorplan.nodes[edge.end];
-			  var len = edge.length;
+			  var len = edge.weight;
 			  floorplan.connectLocations(start, end, len);
 		  }
 		  

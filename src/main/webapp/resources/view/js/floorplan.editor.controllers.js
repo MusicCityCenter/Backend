@@ -261,6 +261,19 @@ function floorplanEditorController($scope, $http, $routeParams) {
 			}
 		}
 	}
+	
+	$scope.editedEdge = function(edge) {
+		$scope.dirty = true;
+		var edges = $scope.editor.floorplan.edges;
+		for ( var i = 0; i< edges.length; i++) {
+			var old_edge = edges[i];
+			if (old_edge.start.id == edge.start.id && old_edge.end.id == edge.end.id){
+				old_edge.weight = edge.weight;
+				console.log("Updated edge weight");
+				break;
+			}
+		}
+	}
 
 	$scope.loadFloorplan = function(floorplanId) {
 		$http
@@ -297,6 +310,7 @@ function floorplanEditorController($scope, $http, $routeParams) {
 	$scope.saveFloorplan = function() {
 		var marshaller = new FloorplanMarshaller();
 		var fp = marshaller.marshallFloorplanToString($scope.floorplan);
+		console.log("saving floorplan" +fp);//debug
 		var coords = marshaller.marshallCoordsToString($scope.floorplan,
 				$scope.img);
 

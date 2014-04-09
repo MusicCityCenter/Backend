@@ -53,10 +53,11 @@ public class FloorplanImageMapping {
 	}
 	
 	public double getEdgeLength(FloorplanLocationEdge edge){
-		FloorplanLocationImageCoords n1 = getLocation(edge.getStart());
-		FloorplanLocationImageCoords n2 = getLocation(edge.getEnd());
+		//FloorplanLocationImageCoords n1 = getLocation(edge.getStart());
+		//FloorplanLocationImageCoords n2 = getLocation(edge.getEnd());
 		
-		return Math.sqrt(((double)(Math.pow(n1.getX() - n2.getX(),2) + (Math.pow(n1.getY() - n2.getY(),2))))); 
+		//return Math.sqrt(((double)(Math.pow(n1.getX() - n2.getX(),2) + (Math.pow(n1.getY() - n2.getY(),2))))); 
+		return edge.getLength();
 	}
 
 	public String getImageUrl() {

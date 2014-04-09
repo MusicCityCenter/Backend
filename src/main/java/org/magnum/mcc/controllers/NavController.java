@@ -40,6 +40,7 @@ import org.magnum.mcc.building.persistence.JDOEventLoader;
 import org.magnum.mcc.building.persistence.MCCObjectMapper;
 import org.magnum.mcc.building.persistence.FloorplanImageLoader;
 import org.magnum.mcc.modules.StandaloneServerModule;
+import org.magnum.mcc.paths.DirectedGraph;
 import org.magnum.mcc.paths.Path;
 import org.magnum.mcc.paths.ShortestPathSolver;
 import org.magnum.mcc.paths.ShortestPaths;
@@ -113,6 +114,8 @@ public class NavController {
 		// and storing data it provides into the datastore. This data
 		// should be highly sanitized here...
 		Floorplan fp = floorplanMarshaller_.fromString(floorplanjson);
+		
+		System.out.println("\n\nThe JSON is: \n:"+floorplanjson+"\n\n");
 
 		syncFloorplanAndBeacons(floorplanId, fp);
 		floorplanLoader_.save(floorplanId, fp);
@@ -349,14 +352,19 @@ public class NavController {
 		// nodes
 		Path<FloorplanLocation> path = paths.getShortestPath(end);
 		List<PathData> pathData = new ArrayList<PathData>();
+		DirectedGraph<FloorplanLocation> graph = fp.asGraph();
 
 		FloorplanLocation prev = null;
 		for (FloorplanLocation fl : path) {
 			if (prev != null) {
+				
 				FloorplanLocationEdge edge = new FloorplanLocationEdge(prev,
 						fl, false, 0);
 				double angle = mapping.getEdgeAngle(edge);
-				double dist = mapping.getEdgeLength(edge);
+				double dist = graph.edgesFrom(prev).get(fl).getLength();
+				
+				System.out.println("\n\nObject length is: "+dist+"\n\n");
+				
 				pathData.add(new PathData(prev.getId(), fl.getId(), dist, angle));
 			}
 			prev = fl;

@@ -56,7 +56,8 @@
     	  this.connectLocations = function(start,end,weight){
     		  var edge = new FloorplanEdge(start,end,weight,null);
     		  this.edges.push(edge);
-    		  console.log("Adding edge from "+edge.start.id+" to "+edge.end.id);
+    		  //debug
+    		  console.log("Adding edge from "+edge.start.id+" to "+edge.end.id + " of weight "+edge.weight+" where weight was "+weight);
     		  return edge;
     	  }
       }

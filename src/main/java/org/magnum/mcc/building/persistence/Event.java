@@ -13,8 +13,6 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 import javax.persistence.Lob;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.Text;
 
 @PersistenceCapable
@@ -51,6 +49,9 @@ public class Event {
 
 	@Persistent
 	private String floorplanLocationId;
+	
+	@Persistent
+	private String conference="<not listed>";
 
 	public String getId() {
 		return id;
@@ -130,6 +131,14 @@ public class Event {
 
 	public void setFloorplanId(String floorplanId) {
 		this.floorplanId = floorplanId;
+	}
+
+	public String getConference() {
+		return conference;
+	}
+
+	public void setConference(String conference) {
+		this.conference = conference;
 	}
 
 }

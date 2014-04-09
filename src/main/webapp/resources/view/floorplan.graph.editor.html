@@ -52,6 +52,7 @@
 				<div class="col-sm-10">
 					<input type="text" class="form-control" id="weight"
 						ng-model="edgeSelection.weight" 
+						ng-change="editedEdge(edgeSelection)"
 						valid-number
 						></input>
 				</div>
@@ -91,6 +92,7 @@
 				<div class="col-sm-10">
 					<input type="text" class="form-control" id="weight"
 						ng-model="edge2Selection.weight" 
+						ng-change="editedEdge(edge2Selection)"
 						valid-number
 						></input>
 				</div>

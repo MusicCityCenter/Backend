@@ -87,9 +87,9 @@ public class FloorplanSerializer extends JsonSerializer<Floorplan> {
 				serializeFloorplanEdge(gen, loc, end, w, imageId);
 				
 				//corresponding edge
-				EdgeData other = floorplan.getEdgesFrom(end).get(loc);
-				String otherImage = other.getImageId();
-				serializeFloorplanEdge(gen, end, loc, w, otherImage);
+				//EdgeData other = floorplan.getEdgesFrom(end).get(loc);
+				//String otherImage = other.getImageId();
+				//serializeFloorplanEdge(gen, end, loc, w, otherImage);
 			}
 		}
 		gen.writeEndArray();
@@ -101,7 +101,8 @@ public class FloorplanSerializer extends JsonSerializer<Floorplan> {
 		gen.writeStartObject();
 		gen.writeStringField("start", loc.getId());
 		gen.writeStringField("end", end.getId());
-		gen.writeNumberField("length", w);
+		gen.writeNumberField("weight", w);
+		System.out.println("\n\nStored Weight is: "+w+"\n\n");
 		gen.writeStringField("image", edgeImageId);
 		gen.writeEndObject();
 	}

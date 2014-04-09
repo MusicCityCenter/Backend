@@ -29,6 +29,7 @@ public class FloorplanDeserializer extends JsonDeserializer<Floorplan> {
 			JsonProcessingException {
 		ObjectCodec oc = jsonParser.getCodec();
 		JsonNode node = oc.readTree(jsonParser);
+		System.out.println("The full JSON being deserialized is :"+node);
 
 		Map<String, LocationType> types = new HashMap<String, LocationType>();
 		LocationType root = deserializeTypes(node, types);
@@ -68,9 +69,11 @@ public class FloorplanDeserializer extends JsonDeserializer<Floorplan> {
 	}
 
 	private void deserializeEdge(Floorplan floorplan, JsonNode edge) {
+		System.out.println("the JsonNode for the edge is "+edge);
 		String start = edge.get("start").textValue();
 		String end = edge.get("end").textValue();
-		Double len = edge.get("length").doubleValue();
+		Double len = edge.get("weight").doubleValue();
+		System.out.println("\n\n Received Weight is: "+len+"\n\n");
 		JsonNode tmp = edge.get("imageId");
 		String imageId;
 		if (tmp ==null)
