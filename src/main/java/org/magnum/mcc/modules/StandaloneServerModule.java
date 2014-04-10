@@ -20,6 +20,8 @@ import org.magnum.mcc.building.guessers.LocationGuesserServiceImpl;
 import org.magnum.mcc.building.guessers.MeasurementType;
 import org.magnum.mcc.building.guessers.UserLocationTypeFeedbackGuesser;
 import org.magnum.mcc.building.guessers.UserLocationsFeedbackGuesser;
+import org.magnum.mcc.building.locating.BeaconProbabalisticLocator;
+import org.magnum.mcc.building.locating.ProbabalisticLocator;
 import org.magnum.mcc.building.persistence.BeaconsLoader;
 import org.magnum.mcc.building.persistence.EventLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageLoader;
@@ -63,6 +65,7 @@ public class StandaloneServerModule extends AbstractModule {
 		bind(BeaconsLoader.class).to(JDOBeaconsLoader.class);
 		bind(EventLoader.class).to(JDOEventLoader.class);
 		bind(ShortestPathSolver.class).to(Dijkstra.class);
+		bind(ProbabalisticLocator.class).to(BeaconProbabalisticLocator.class);
 
 		// Configure the GuesserStrategies
 		MapBinder<MeasurementType, GuesserStrategy> mapbinder = MapBinder

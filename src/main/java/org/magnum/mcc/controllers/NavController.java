@@ -12,6 +12,7 @@
  **************************************************************************/
 package org.magnum.mcc.controllers;
 
+import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -27,6 +28,7 @@ import org.magnum.mcc.building.FloorplanLocation;
 import org.magnum.mcc.building.FloorplanLocationEdge;
 import org.magnum.mcc.building.FloorplanMapping;
 import org.magnum.mcc.building.PathData;
+import org.magnum.mcc.building.locating.ProbabalisticLocator;
 import org.magnum.mcc.building.persistence.BeaconsAtFloorplanLocation;
 import org.magnum.mcc.building.persistence.BeaconsLoader;
 import org.magnum.mcc.building.persistence.Event;
@@ -51,7 +53,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
@@ -78,6 +82,8 @@ public class NavController {
 	private final EventLoader eventLoader_;
 
 	private ShortestPathSolver solver_;
+	
+	private ProbabalisticLocator locator_;
 
 	public NavController() {
 		Injector injector = Guice.createInjector(new StandaloneServerModule());
@@ -91,6 +97,7 @@ public class NavController {
 		imageLoader_ = injector.getInstance(FloorplanImageLoader.class);
 		beaconsLoader_ = injector.getInstance(BeaconsLoader.class);
 		eventLoader_ = injector.getInstance(JDOEventLoader.class);
+		locator_ = injector.getInstance(ProbabalisticLocator.class);
 	}
 
 	// A duplicate of the next method to make posting floorplans
@@ -268,6 +275,9 @@ public class NavController {
 			response.getOutputStream().write(img.getData().getBytes());
 		}
 	}
+	
+	
+	
 
 	/**
 	 * Sets the mapping of beacons to floor plan locations.
@@ -491,5 +501,16 @@ public class NavController {
 		} else {
 			response.getOutputStream().write(img.getData().getBytes());
 		}
+	}
+	
+	
+	
+	@RequestMapping(value = "/floorplan/{floorplanid}/location", method = RequestMethod.GET)
+	public FloorplanLocation getProbableLocation(@PathVariable("floorplanId") String floorplanId,
+			@RequestParam("locationData") String jsonLocationData,
+			HttpServletResponse response) throws JsonParseException, JsonMappingException, IOException{
+		Floorplan floorplan = floorplanLoader_.load(floorplanId);
+		return locator_.locateBy(jsonLocationData, floorplan);
+
 	}
 }
