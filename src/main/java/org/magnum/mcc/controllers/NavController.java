@@ -114,8 +114,6 @@ public class NavController {
 		// and storing data it provides into the datastore. This data
 		// should be highly sanitized here...
 		Floorplan fp = floorplanMarshaller_.fromString(floorplanjson);
-		
-		System.out.println("\n\nThe JSON is: \n:"+floorplanjson+"\n\n");
 
 		syncFloorplanAndBeacons(floorplanId, fp);
 		floorplanLoader_.save(floorplanId, fp);
@@ -362,8 +360,6 @@ public class NavController {
 						fl, false, 0);
 				double angle = mapping.getEdgeAngle(edge);
 				double dist = graph.edgesFrom(prev).get(fl).getLength();
-				
-				System.out.println("\n\nObject length is: "+dist+"\n\n");
 				
 				pathData.add(new PathData(prev.getId(), fl.getId(), dist, angle));
 			}

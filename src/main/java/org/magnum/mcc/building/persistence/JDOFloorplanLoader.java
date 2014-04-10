@@ -45,7 +45,6 @@ public class JDOFloorplanLoader implements FloorplanLoader {
 
 		try {
 			fp = marshaller_.fromString(json);
-			System.out.println("During load, floorplan is "+json);//Debug
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {

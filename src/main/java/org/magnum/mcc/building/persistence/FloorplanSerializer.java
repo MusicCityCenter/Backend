@@ -102,7 +102,6 @@ public class FloorplanSerializer extends JsonSerializer<Floorplan> {
 		gen.writeStringField("start", loc.getId());
 		gen.writeStringField("end", end.getId());
 		gen.writeNumberField("weight", w);
-		System.out.println("\n\nStored Weight is: "+w+"\n\n");
 		gen.writeStringField("image", edgeImageId);
 		gen.writeEndObject();
 	}

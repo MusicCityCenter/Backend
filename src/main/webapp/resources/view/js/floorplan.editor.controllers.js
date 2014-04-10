@@ -310,7 +310,6 @@ function floorplanEditorController($scope, $http, $routeParams) {
 	$scope.saveFloorplan = function() {
 		var marshaller = new FloorplanMarshaller();
 		var fp = marshaller.marshallFloorplanToString($scope.floorplan);
-		console.log("saving floorplan" +fp);//debug
 		var coords = marshaller.marshallCoordsToString($scope.floorplan,
 				$scope.img);
 
