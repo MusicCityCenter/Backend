@@ -511,6 +511,5 @@ public class NavController {
 			HttpServletResponse response) throws JsonParseException, JsonMappingException, IOException{
 		Floorplan floorplan = floorplanLoader_.load(floorplanId);
 		return locator_.locateBy(jsonLocationData, floorplan);
-
 	}
 }
