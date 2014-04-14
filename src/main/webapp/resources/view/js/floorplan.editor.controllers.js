@@ -302,9 +302,13 @@ function floorplanEditorController($scope, $http, $routeParams) {
 		$scope.img = imgurl;
 		$scope.toolset = new FloorplanEditorToolset($scope);
 		$scope.editor = new FloorplanManipulator($scope.floorplan, $scope.img,
-				$scope.toolset);
+				$scope.toolset, 2.0);
 
 		$scope.json = "";
+	}
+	
+	$scope.setScale = function(scale){
+		$scope.editor.setScale(scale);
 	}
 
 	$scope.saveFloorplan = function() {

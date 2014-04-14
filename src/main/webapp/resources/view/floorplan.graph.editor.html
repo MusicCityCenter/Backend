@@ -1,8 +1,14 @@
 
 <!-- Example row of columns -->
 <div class="row" style="text-align:left">
-	<div class="col-md-8">
-		<div id="container" style="margin: 0px"></div>
+	<div class="col-md-8" style="margin-top:20px">
+		Zoom Level:
+	    <div class="btn-group">
+        <button type="button" class="btn btn-default" ng-click="setScale(1.0)">1X</button>
+        <button type="button" class="btn btn-default" ng-click="setScale(1.5)">1.5X</button>
+        <button type="button" class="btn btn-default" ng-click="setScale(2.0)">2X</button>
+      </div>
+		<div id="container" style="margin: 0px; width:700px; height:2000px; overflow:auto"></div>
 	</div>
 	<div class="col-md-4">
 		<p>

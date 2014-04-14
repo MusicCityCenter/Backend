@@ -410,7 +410,7 @@ public class NavController {
 	 * @param year
 	 * @return
 	 */
-	@RequestMapping(value = "/events/{floorplanId}/on/{month}/{day}/{year}", method = RequestMethod.GET)
+	@RequestMapping(value = "/conferences/{floorplanId}/on/{month}/{day}/{year}", method = RequestMethod.GET)
 	public @ResponseBody
 	Set<Conference> getConferencesOn(@PathVariable("floorplanId") String floorplanId,
 			@PathVariable("month") int month, @PathVariable("day") int day,
