@@ -47,7 +47,7 @@ public class FloorplanDeserializer extends JsonDeserializer<Floorplan> {
 	}
 	
 	private LocationType deserializeType(JsonNode node, LocationType parent, Map<String,LocationType> types){
-		String name = node.get("name").textValue();
+		String name = node.get("name").asText();
 		
 		LocationType rt = new LocationType(name, parent);
 		types.put(name, rt);

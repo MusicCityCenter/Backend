@@ -13,6 +13,7 @@
 package org.magnum.mcc.controllers;
 
 import java.io.IOException;
+import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -48,11 +49,14 @@ import org.magnum.mcc.paths.ShortestPathSolver;
 import org.magnum.mcc.paths.ShortestPaths;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -505,12 +509,16 @@ public class NavController {
 	
 	
 	
-	@RequestMapping(value = "/floorplan/{floorplanid}/location", method = RequestMethod.GET)
-	public FloorplanLocation getProbableLocation(@PathVariable("floorplanId") String floorplanId,
-			@RequestParam("locationData") String jsonLocationData,
-			HttpServletResponse response) throws JsonParseException, JsonMappingException, IOException{
+	@RequestMapping(value = "/floorplan/{floorplanId}/location", method = RequestMethod.POST)
+	public @ResponseBody FloorplanLocation getProbableLocation(@PathVariable("floorplanId") String floorplanId,
+			@RequestParam("locationData") String jsonLocationData) throws JsonParseException, JsonMappingException, IOException{
+		//Debug
+		//System.out.println("\n\n"+jsonLocationData+"\n\n");
 		Floorplan floorplan = floorplanLoader_.load(floorplanId);
-		return locator_.locateBy(jsonLocationData, floorplan);
+		FloorplanLocation likelyLoc = locator_.locateBy(jsonLocationData, floorplan);
+		return likelyLoc;
 
 	}
+	
+
 }
