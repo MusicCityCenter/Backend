@@ -70,7 +70,7 @@ public class FloorplanDeserializer extends JsonDeserializer<Floorplan> {
 	private void deserializeEdge(Floorplan floorplan, JsonNode edge) {
 		String start = edge.get("start").textValue();
 		String end = edge.get("end").textValue();
-		Double len = edge.get("weight").asDouble();
+		Double len = (edge.get("weight") != null) ? edge.get("weight").asDouble() : 0.0;
 		JsonNode tmp = edge.get("imageId");
 		String imageId;
 		if (tmp ==null)

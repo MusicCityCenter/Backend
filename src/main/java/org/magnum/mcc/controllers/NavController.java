@@ -32,16 +32,17 @@ import org.magnum.mcc.building.PathData;
 import org.magnum.mcc.building.locating.ProbabalisticLocator;
 import org.magnum.mcc.building.persistence.BeaconsAtFloorplanLocation;
 import org.magnum.mcc.building.persistence.BeaconsLoader;
+import org.magnum.mcc.building.persistence.Conference;
 import org.magnum.mcc.building.persistence.Event;
 import org.magnum.mcc.building.persistence.EventLoader;
 import org.magnum.mcc.building.persistence.FloorplanImage;
+import org.magnum.mcc.building.persistence.FloorplanImageLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageMappingLoader;
 import org.magnum.mcc.building.persistence.FloorplanImageMappingMarshaller;
 import org.magnum.mcc.building.persistence.FloorplanLoader;
 import org.magnum.mcc.building.persistence.FloorplanMarshaller;
 import org.magnum.mcc.building.persistence.JDOEventLoader;
 import org.magnum.mcc.building.persistence.MCCObjectMapper;
-import org.magnum.mcc.building.persistence.FloorplanImageLoader;
 import org.magnum.mcc.modules.StandaloneServerModule;
 import org.magnum.mcc.paths.DirectedGraph;
 import org.magnum.mcc.paths.Path;
@@ -402,6 +403,26 @@ public class NavController {
 				year);
 		return events;
 	}
+	
+	/**
+	 * Returns the list of conferences that are taking place in the building wtih the
+	 * given floor plan on the specified date.
+	 * 
+	 * @param floorplanId
+	 * @param month
+	 * @param day
+	 * @param year
+	 * @return
+	 */
+	@RequestMapping(value = "/conferences/{floorplanId}/on/{month}/{day}/{year}", method = RequestMethod.GET)
+	public @ResponseBody
+	Set<Conference> getConferencesOn(@PathVariable("floorplanId") String floorplanId,
+			@PathVariable("month") int month, @PathVariable("day") int day,
+			@PathVariable("year") int year) {
+		Set<Conference> confs = eventLoader_.getConferencesOn(floorplanId, month, day,
+				year);
+		return confs;
+	}
 
 	/**
 	 * Add an event to the list of events for the specified building, day, time,
@@ -515,9 +536,7 @@ public class NavController {
 		//Debug
 		//System.out.println("\n\n"+jsonLocationData+"\n\n");
 		Floorplan floorplan = floorplanLoader_.load(floorplanId);
-		FloorplanLocation likelyLoc = locator_.locateBy(jsonLocationData, floorplan);
-		return likelyLoc;
-
+		return locator_.locateBy(jsonLocationData, floorplan);
 	}
 	
 

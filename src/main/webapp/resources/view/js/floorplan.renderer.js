@@ -190,14 +190,18 @@ var FloorplanRenderer = function(listener, floorplan, stage, scale) {
 	}
 }
 
-var FloorplanManipulator = function(floorplan, floorplanImgUrl, toolSet) {
+var FloorplanManipulator = function(floorplan, floorplanImgUrl, toolSet, editorScale) {
 	this.keyboard = new Keyboard(this);
 	this.stage = null;
+	this.floorplanImg = null;
 	this.imageLayer = null;
 	this.floorplan = floorplan;
 	this.toolSet = toolSet;
+	this.ratio = 1.0;
 	this.keyBindings = {};
-
+	
+	editorScale = (editorScale) ? editorScale : 1.0;
+	
 	this.locationClicked = function(location) {
 		this.toolSet.locationClicked(this, location);
 	}
@@ -258,8 +262,9 @@ var FloorplanManipulator = function(floorplan, floorplanImgUrl, toolSet) {
 	var imageObj = new Image();
 	imageObj.onload = function() {
 		var ratio = imageObj.width / imageObj.height;
+		this.ratio = ratio;
 
-		imgw = 700;
+		imgw = 700 * editorScale;
 		imgh = imgw / ratio;
 
 		this.scale = imgw / imageObj.width;
@@ -282,6 +287,7 @@ var FloorplanManipulator = function(floorplan, floorplanImgUrl, toolSet) {
 
 		// add the shape to the layer
 		this.imageLayer.add(floorplanImg);
+		this.floorplanImg = floorplanImg;
 
 		// add the layer to the stage
 		this.stage.add(this.imageLayer);
@@ -290,4 +296,15 @@ var FloorplanManipulator = function(floorplan, floorplanImgUrl, toolSet) {
 	};
 	imageObj.onload = imageObj.onload.bind(this);
 	imageObj.src = floorplanImgUrl;
+	
+	this.setScale = function(newScale){
+		var imgw = 700 * newScale;
+		var imgh = imgw / this.ratio;
+		
+		this.scale = imgw / imageObj.width;
+		this.floorplanRenderer.scale = this.scale;
+		this.floorplanImg.setSize({width:imgw, height: imgh});
+		this.imageLayer.draw();
+		this.floorplanRenderer.refresh();
+	};
 }

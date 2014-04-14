@@ -21,6 +21,45 @@ public class JDOEventLoader implements EventLoader {
 	
 	@SuppressWarnings("unchecked")
 	@Override
+	public Set<Conference> getConferencesOn(String floorplanId, int month, int day, int year) {
+		
+		Set<Conference> confs = null;
+		final PersistenceManager pm = getPersistenceManager();
+		try{
+			Query query = pm.newQuery(Conference.class);
+			query.setFilter("floorplanId == f && year == y && month == m && day == d");
+			query.declareParameters("String f,int y,int m,int d");
+			confs = new HashSet<Conference>((List<Conference>)query.executeWithArray(floorplanId,year,month,day));
+			
+		}finally{
+			pm.close();
+		}
+		return confs;
+	}
+	
+	@Override
+	public void deleteConference(String id) {
+		final PersistenceManager pm = getPersistenceManager();
+		try{
+			Conference c = pm.getObjectById(Conference.class, id);
+			pm.deletePersistent(c);
+		}finally{
+			pm.close();
+		}
+	}
+	
+	@Override
+	public void saveConference(Conference c) {
+		final PersistenceManager pm = getPersistenceManager();
+		try{
+			pm.makePersistent(c);
+		}finally{
+			pm.close();
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
 	public Set<Event> getEventsOn(String floorplanId, int month, int day, int year) {
 		
 		Set<Event> events = null;
