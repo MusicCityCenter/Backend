@@ -10,6 +10,12 @@ import java.util.Set;
 
 public interface EventLoader {
 
+	public Set<Conference> getConferencesOn(String floorplanId, int month, int day, int year);
+	
+	public void saveConference(Conference evt);
+	
+	public void deleteConference(String id);
+	
 	public Set<Event> getEventsOn(String floorplanId, int month, int day, int year);
 	
 	public Set<Event> getEventsInLocationOn(String floorplanId, String locationId, int month, int day, int year);

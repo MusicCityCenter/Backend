@@ -1,0 +1,2999 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<events>
+  <event>
+    <date> 4/ 9/2014 -  4/11/2014</date>
+    <datelong>Wednesday, April 09, 2014 - Friday, April 11, 2014</datelong>
+    <name><![CDATA[Tn. Coalition to End Domestic & Sexual Violence]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/ 9/2014</begdate>
+    <enddate> 4/11/2014</enddate>
+    <begdatelong>Wednesday, April 09, 2014</begdatelong>
+    <enddatelong>Friday, April 11, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>208A-B</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>125</attendance>
+    <eventid>1404053</eventid>
+    <days>
+      <day> 4/ 9/2014</day>
+      <day> 4/10/2014</day>
+      <day> 4/11/2014</day>
+    </days>
+    <times>
+      <time> 4/ 9/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/10/2014 -  4/11/2014</date>
+    <datelong>Thursday, April 10, 2014 - Friday, April 11, 2014</datelong>
+    <name><![CDATA[PMI Nashville 2014 Symposium]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/10/2014</begdate>
+    <enddate> 4/11/2014</enddate>
+    <begdatelong>Thursday, April 10, 2014</begdatelong>
+    <enddatelong>Friday, April 11, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101A-E</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>425</attendance>
+    <eventid>1404043</eventid>
+    <days>
+      <day> 4/10/2014</day>
+      <day> 4/11/2014</day>
+    </days>
+    <times>
+      <time> 4/10/2014  9:00 AM</time>
+      <time> 4/10/2014  8:00 AM</time>
+      <time> 4/11/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/11/2014</date>
+    <datelong>Friday, April 11, 2014</datelong>
+    <name><![CDATA[Best Buddies Gala & Casino Night]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/11/2014</begdate>
+    <enddate> 4/11/2014</enddate>
+    <begdatelong>Friday, April 11, 2014</begdatelong>
+    <enddatelong>Friday, April 11, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BR-A</location>
+    <nature>Meal Function</nature>
+    <attendance>500</attendance>
+    <eventid>1404044</eventid>
+    <days>
+      <day> 4/11/2014</day>
+    </days>
+    <times>
+      <time> 4/11/2014  5:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/12/2014 -  4/13/2014</date>
+    <datelong>Saturday, April 12, 2014 - Sunday, April 13, 2014</datelong>
+    <name><![CDATA[One Up Championships]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 4/12/2014</begdate>
+    <enddate> 4/13/2014</enddate>
+    <begdatelong>Saturday, April 12, 2014</begdatelong>
+    <enddatelong>Sunday, April 13, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhB-D</location>
+    <nature>Regional Convention</nature>
+    <attendance>13,000</attendance>
+    <eventid>1404007</eventid>
+    <days>
+      <day> 4/ 9/2014</day>
+      <day> 4/10/2014</day>
+      <day> 4/12/2014</day>
+      <day> 4/13/2014</day>
+    </days>
+    <times>
+      <time> 4/12/2014  8:00 AM</time>
+      <time> 4/12/2014  8:00 AM</time>
+      <time> 4/ 9/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/12/2014</date>
+    <datelong>Saturday, April 12, 2014</datelong>
+    <name><![CDATA[Sue Kalp Wedding]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/12/2014</begdate>
+    <enddate> 4/12/2014</enddate>
+    <begdatelong>Saturday, April 12, 2014</begdatelong>
+    <enddatelong>Saturday, April 12, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101A-D</location>
+    <nature>Meal Function</nature>
+    <attendance>150</attendance>
+    <eventid>1404047</eventid>
+    <days>
+      <day> 4/12/2014</day>
+    </days>
+    <times>
+      <time> 4/12/2014  4:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/12/2014</date>
+    <datelong>Saturday, April 12, 2014</datelong>
+    <name><![CDATA[Belmont Awards Dinner]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/12/2014</begdate>
+    <enddate> 4/12/2014</enddate>
+    <begdatelong>Saturday, April 12, 2014</begdatelong>
+    <enddatelong>Saturday, April 12, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BR-A1</location>
+    <nature>Meal Function</nature>
+    <attendance>420</attendance>
+    <eventid>1404070</eventid>
+    <days>
+      <day> 4/12/2014</day>
+    </days>
+    <times>
+      <time> 4/12/2014  5:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/12/2014</date>
+    <datelong>Saturday, April 12, 2014</datelong>
+    <name><![CDATA[Martin Luther King High School Prom]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/12/2014</begdate>
+    <enddate> 4/12/2014</enddate>
+    <begdatelong>Saturday, April 12, 2014</begdatelong>
+    <enddatelong>Saturday, April 12, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location></location>
+    <nature>Meal Function</nature>
+    <attendance>250</attendance>
+    <eventid>1404025</eventid>
+    <days>
+      <day> 4/12/2014</day>
+    </days>
+    <times>
+      <time> 4/12/2014  6:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/13/2014 -  4/17/2014</date>
+    <datelong>Sunday, April 13, 2014 - Thursday, April 17, 2014</datelong>
+    <name><![CDATA[Education Technology Conference]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/13/2014</begdate>
+    <enddate> 4/17/2014</enddate>
+    <begdatelong>Sunday, April 13, 2014</begdatelong>
+    <enddatelong>Thursday, April 17, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA</location>
+    <nature>Regional Convention</nature>
+    <attendance>1,500</attendance>
+    <eventid>1404019</eventid>
+    <days>
+      <day> 4/13/2014</day>
+      <day> 4/14/2014</day>
+      <day> 4/15/2014</day>
+      <day> 4/16/2014</day>
+      <day> 4/17/2014</day>
+    </days>
+    <times>
+      <time> 4/13/2014 12:01 PM</time>
+      <time> 4/13/2014  8:00 AM</time>
+      <time> 4/14/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/16/2014 -  4/18/2014</date>
+    <datelong>Wednesday, April 16, 2014 - Friday, April 18, 2014</datelong>
+    <name><![CDATA[National Wood Flooring Association]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/16/2014</begdate>
+    <enddate> 4/18/2014</enddate>
+    <begdatelong>Wednesday, April 16, 2014</begdatelong>
+    <enddatelong>Friday, April 18, 2014</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">The National Wood Flooring Association (</font>NWFA) is a not-for-profit trade association representing all segments of the hardwood flooring industry, including manufacturers, distributors, retailers, installers, inspectors, and consultants. We provide training and resources for wood flooring professionals to enhance their businesses and skills.<p><br>]]></description>
+    <location>ExhB-C</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>2,400</attendance>
+    <eventid>1404012</eventid>
+    <days>
+      <day> 4/15/2014</day>
+      <day> 4/16/2014</day>
+      <day> 4/17/2014</day>
+      <day> 4/18/2014</day>
+      <day> 4/19/2014</day>
+    </days>
+    <times>
+      <time> 4/17/2014  7:00 AM</time>
+      <time> 4/15/2014  7:00 AM</time>
+      <time> 4/16/2014  7:00 AM</time>
+      <time> 4/16/2014  7:00 AM</time>
+      <time> 4/17/2014 11:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/17/2014</date>
+    <datelong>Thursday, April 17, 2014</datelong>
+    <name><![CDATA[Associated Wholesale Grocers Food Show]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/17/2014</begdate>
+    <enddate> 4/17/2014</enddate>
+    <begdatelong>Thursday, April 17, 2014</begdatelong>
+    <enddatelong>Thursday, April 17, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhD</location>
+    <nature>Regional Trade Show</nature>
+    <attendance>600</attendance>
+    <eventid>1404029</eventid>
+    <days>
+      <day> 4/17/2014</day>
+    </days>
+    <times>
+      <time> 4/17/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/17/2014</date>
+    <datelong>Thursday, April 17, 2014</datelong>
+    <name><![CDATA[Metro Nashville Emergency Communications Center]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/17/2014</begdate>
+    <enddate> 4/17/2014</enddate>
+    <begdatelong>Thursday, April 17, 2014</begdatelong>
+    <enddatelong>Thursday, April 17, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101A-D</location>
+    <nature>Meal Function</nature>
+    <attendance>130</attendance>
+    <eventid>1404087</eventid>
+    <days>
+      <day> 4/17/2014</day>
+    </days>
+    <times>
+      <time> 4/17/2014  6:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/22/2014 -  4/24/2014</date>
+    <datelong>Tuesday, April 22, 2014 - Thursday, April 24, 2014</datelong>
+    <name><![CDATA[NDC International Exhibition 2014]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/22/2014</begdate>
+    <enddate> 4/24/2014</enddate>
+    <begdatelong>Tuesday, April 22, 2014</begdatelong>
+    <enddatelong>Thursday, April 24, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhB</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,200</attendance>
+    <eventid>1405006</eventid>
+    <days>
+      <day> 4/21/2014</day>
+      <day> 4/22/2014</day>
+      <day> 4/23/2014</day>
+      <day> 4/24/2014</day>
+    </days>
+    <times>
+      <time> 4/21/2014  8:00 AM</time>
+      <time> 4/22/2014  8:00 AM</time>
+      <time> 4/22/2014  8:00 AM</time>
+      <time> 4/23/2014  8:00 AM</time>
+      <time> 4/24/2014  8:00 AM</time>
+      <time> 4/22/2014  8:00 AM</time>
+      <time> 4/23/2014  8:00 AM</time>
+      <time> 4/22/2014  8:00 AM</time>
+      <time> 4/21/2014  8:00 AM</time>
+      <time> 4/21/2014  4:00 PM</time>
+      <time> 4/23/2014  8:00 AM</time>
+      <time> 4/23/2014  8:00 AM</time>
+      <time> 4/22/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/22/2014 -  4/25/2014</date>
+    <datelong>Tuesday, April 22, 2014 - Friday, April 25, 2014</datelong>
+    <name><![CDATA[Country Music Marathon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/22/2014</begdate>
+    <enddate> 4/25/2014</enddate>
+    <begdatelong>Tuesday, April 22, 2014</begdatelong>
+    <enddatelong>Friday, April 25, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC-D</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>22,000</attendance>
+    <eventid>1404002</eventid>
+    <days>
+      <day> 4/22/2014</day>
+      <day> 4/23/2014</day>
+      <day> 4/24/2014</day>
+      <day> 4/25/2014</day>
+    </days>
+    <times>
+      <time> 4/22/2014  8:00 AM</time>
+      <time> 4/22/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/23/2014</date>
+    <datelong>Wednesday, April 23, 2014</datelong>
+    <name><![CDATA[American Heart Association Go for Red Womens Lunch]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/23/2014</begdate>
+    <enddate> 4/23/2014</enddate>
+    <begdatelong>Wednesday, April 23, 2014</begdatelong>
+    <enddatelong>Wednesday, April 23, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>210</location>
+    <nature>Meal Function</nature>
+    <attendance>500</attendance>
+    <eventid>1404023</eventid>
+    <days>
+      <day> 4/23/2014</day>
+    </days>
+    <times>
+      <time> 4/23/2014  9:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/25/2014</date>
+    <datelong>Friday, April 25, 2014</datelong>
+    <name><![CDATA[St. Jude Country Music Marathon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/25/2014</begdate>
+    <enddate> 4/25/2014</enddate>
+    <begdatelong>Friday, April 25, 2014</begdatelong>
+    <enddatelong>Friday, April 25, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BR-A</location>
+    <nature>Meal Function</nature>
+    <attendance>600</attendance>
+    <eventid>1404065</eventid>
+    <days>
+      <day> 4/25/2014</day>
+    </days>
+    <times>
+      <time> 4/25/2014  5:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/26/2014 -  4/27/2014</date>
+    <datelong>Saturday, April 26, 2014 - Sunday, April 27, 2014</datelong>
+    <name><![CDATA[Stage One Productions]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 4/26/2014</begdate>
+    <enddate> 4/27/2014</enddate>
+    <begdatelong>Saturday, April 26, 2014</begdatelong>
+    <enddatelong>Sunday, April 27, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA1</location>
+    <nature>Public Spectator Event</nature>
+    <attendance>1,000</attendance>
+    <eventid>1403020</eventid>
+    <days>
+      <day> 4/26/2014</day>
+      <day> 4/27/2014</day>
+    </days>
+    <times>
+      <time> 4/26/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/26/2014</date>
+    <datelong>Saturday, April 26, 2014</datelong>
+    <name><![CDATA[Maplewood High School Prom]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/26/2014</begdate>
+    <enddate> 4/26/2014</enddate>
+    <begdatelong>Saturday, April 26, 2014</begdatelong>
+    <enddatelong>Saturday, April 26, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>108</location>
+    <nature>Meal Function</nature>
+    <attendance>150</attendance>
+    <eventid>1404024</eventid>
+    <days>
+      <day> 4/26/2014</day>
+    </days>
+    <times>
+      <time> 4/26/2014  7:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/26/2014</date>
+    <datelong>Saturday, April 26, 2014</datelong>
+    <name><![CDATA[Springfield HS 2013-2014 Prom]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/26/2014</begdate>
+    <enddate> 4/26/2014</enddate>
+    <begdatelong>Saturday, April 26, 2014</begdatelong>
+    <enddatelong>Saturday, April 26, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BR-A</location>
+    <nature>Meal Function</nature>
+    <attendance>350</attendance>
+    <eventid>1404039</eventid>
+    <days>
+      <day> 4/26/2014</day>
+    </days>
+    <times>
+      <time> 4/26/2014  7:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/27/2014</date>
+    <datelong>Sunday, April 27, 2014</datelong>
+    <name><![CDATA[Natl Assn for College Admissions Counse]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 4/27/2014</begdate>
+    <enddate> 4/27/2014</enddate>
+    <begdatelong>Sunday, April 27, 2014</begdatelong>
+    <enddatelong>Sunday, April 27, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA2</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>1,000</attendance>
+    <eventid>1404048</eventid>
+    <days>
+      <day> 4/27/2014</day>
+    </days>
+    <times>
+      <time> 4/27/2014  8:00 AM</time>
+      <time> 4/27/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/28/2014</date>
+    <datelong>Monday, April 28, 2014</datelong>
+    <name><![CDATA[TN Basic Economic Development Course]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/28/2014</begdate>
+    <enddate> 4/28/2014</enddate>
+    <begdatelong>Monday, April 28, 2014</begdatelong>
+    <enddatelong>Monday, April 28, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>105-A</location>
+    <nature>Local Meeting/Seminar</nature>
+    <attendance>50</attendance>
+    <eventid>1404041</eventid>
+    <days>
+      <day> 4/28/2014</day>
+    </days>
+    <times>
+      <time> 4/28/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 4/29/2014</date>
+    <datelong>Tuesday, April 29, 2014</datelong>
+    <name><![CDATA[Hanover Insurance Seminar]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 4/29/2014</begdate>
+    <enddate> 4/29/2014</enddate>
+    <begdatelong>Tuesday, April 29, 2014</begdatelong>
+    <enddatelong>Tuesday, April 29, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location></location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>130</attendance>
+    <eventid>1404078</eventid>
+    <days>
+      <day> 4/29/2014</day>
+    </days>
+    <times>
+      <time> 4/29/2014  9:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 1/2014</date>
+    <datelong>Thursday, May 01, 2014</datelong>
+    <name><![CDATA[First Baptist Day of Prayer Breakfast]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 1/2014</begdate>
+    <enddate> 5/ 1/2014</enddate>
+    <begdatelong>Thursday, May 01, 2014</begdatelong>
+    <enddatelong>Thursday, May 01, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location></location>
+    <nature>Meal Function</nature>
+    <attendance>300</attendance>
+    <eventid>1405060</eventid>
+    <days>
+      <day> 5/ 1/2014</day>
+    </days>
+    <times>
+      <time> 5/ 1/2014  6:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 3/2014</date>
+    <datelong>Saturday, May 03, 2014</datelong>
+    <name><![CDATA[ACN Training Session]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 3/2014</begdate>
+    <enddate> 5/ 3/2014</enddate>
+    <begdatelong>Saturday, May 03, 2014</begdatelong>
+    <enddatelong>Saturday, May 03, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>104A-E</location>
+    <nature>Local Meeting/Seminar</nature>
+    <attendance>1,000</attendance>
+    <eventid>1404066</eventid>
+    <days>
+      <day> 5/ 3/2014</day>
+    </days>
+    <times>
+      <time> 5/ 3/2014  9:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 3/2014</date>
+    <datelong>Saturday, May 03, 2014</datelong>
+    <name><![CDATA[Sister Cities Caen Delegation Dinner ]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 3/2014</begdate>
+    <enddate> 5/ 3/2014</enddate>
+    <begdatelong>Saturday, May 03, 2014</begdatelong>
+    <enddatelong>Saturday, May 03, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>103A-B</location>
+    <nature>Meal Function</nature>
+    <attendance>40</attendance>
+    <eventid>1405071</eventid>
+    <days>
+      <day> 5/ 3/2014</day>
+    </days>
+    <times>
+      <time> 5/ 3/2014  5:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 4/2014 -  5/ 6/2014</date>
+    <datelong>Sunday, May 04, 2014 - Tuesday, May 06, 2014</datelong>
+    <name><![CDATA[Soc of Gastroenterology Nurses & Assoc Anl Course]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 4/2014</begdate>
+    <enddate> 5/ 6/2014</enddate>
+    <begdatelong>Sunday, May 04, 2014</begdatelong>
+    <enddatelong>Tuesday, May 06, 2014</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">The Society of </font>Gastroenterology Nurses and Associates is a professional organization of nurses and associates dedicated to the safe and effective practice of gastroenterology and endoscopy nursing. SGNA carries out its mission by advancing the science and practice of gastroenterology and endoscopy nursing through education, research, advocacy, and collaboration, and by promoting the professional development of its members in an atmosphere of mutual support.<br><br>]]></description>
+    <location>ExhA</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>2,600</attendance>
+    <eventid>1404001</eventid>
+    <days>
+      <day> 5/ 2/2014</day>
+      <day> 5/ 3/2014</day>
+      <day> 5/ 4/2014</day>
+      <day> 5/ 5/2014</day>
+      <day> 5/ 6/2014</day>
+    </days>
+    <times>
+      <time> 5/ 4/2014  8:00 AM</time>
+      <time> 5/ 4/2014  8:00 AM</time>
+      <time> 5/ 2/2014  8:00 AM</time>
+      <time> 5/ 6/2014 10:15 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 7/2014 -  5/ 8/2014</date>
+    <datelong>Wednesday, May 07, 2014 - Thursday, May 08, 2014</datelong>
+    <name><![CDATA[Coldwell Banker]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 7/2014</begdate>
+    <enddate> 5/ 8/2014</enddate>
+    <begdatelong>Wednesday, May 07, 2014</begdatelong>
+    <enddatelong>Thursday, May 08, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>104-C</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>250</attendance>
+    <eventid>1405050</eventid>
+    <days>
+      <day> 5/ 7/2014</day>
+      <day> 5/ 8/2014</day>
+    </days>
+    <times>
+      <time> 5/ 8/2014  9:30 AM</time>
+      <time> 5/ 7/2014  9:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 8/2014 -  5/10/2014</date>
+    <datelong>Thursday, May 08, 2014 - Saturday, May 10, 2014</datelong>
+    <name><![CDATA[2014 Imprinted Sportswear Show]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 8/2014</begdate>
+    <enddate> 5/10/2014</enddate>
+    <begdatelong>Thursday, May 08, 2014</begdatelong>
+    <enddatelong>Saturday, May 10, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhD</location>
+    <nature>National Trade Show</nature>
+    <attendance>2,000</attendance>
+    <eventid>1405039</eventid>
+    <days>
+      <day> 5/ 7/2014</day>
+      <day> 5/ 8/2014</day>
+      <day> 5/ 9/2014</day>
+      <day> 5/10/2014</day>
+    </days>
+    <times>
+      <time> 5/ 8/2014  8:00 AM</time>
+      <time> 5/ 7/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 8/2014</date>
+    <datelong>Thursday, May 08, 2014</datelong>
+    <name><![CDATA[Dixon Wells Administrative Assistants Luncheon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 8/2014</begdate>
+    <enddate> 5/ 8/2014</enddate>
+    <begdatelong>Thursday, May 08, 2014</begdatelong>
+    <enddatelong>Thursday, May 08, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>214</location>
+    <nature>Meal Function</nature>
+    <attendance>50</attendance>
+    <eventid>1405062</eventid>
+    <days>
+      <day> 5/ 8/2014</day>
+    </days>
+    <times>
+      <time> 5/ 8/2014 12:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 9/2014</date>
+    <datelong>Friday, May 09, 2014</datelong>
+    <name><![CDATA[Vanderbilt University Medical Center]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 9/2014</begdate>
+    <enddate> 5/ 9/2014</enddate>
+    <begdatelong>Friday, May 09, 2014</begdatelong>
+    <enddatelong>Friday, May 09, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>203A-B</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>75</attendance>
+    <eventid>1405048</eventid>
+    <days>
+      <day> 5/ 9/2014</day>
+    </days>
+    <times>
+      <time> 5/ 9/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/ 9/2014</date>
+    <datelong>Friday, May 09, 2014</datelong>
+    <name><![CDATA[Van Pelt Celebration]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/ 9/2014</begdate>
+    <enddate> 5/ 9/2014</enddate>
+    <begdatelong>Friday, May 09, 2014</begdatelong>
+    <enddatelong>Friday, May 09, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>Lounge</location>
+    <nature>Local Dance/Reception</nature>
+    <attendance>30</attendance>
+    <eventid>1405056</eventid>
+    <days>
+      <day> 5/ 9/2014</day>
+    </days>
+    <times>
+      <time> 5/ 9/2014 11:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/14/2014</date>
+    <datelong>Wednesday, May 14, 2014</datelong>
+    <name><![CDATA[Gartner]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/14/2014</begdate>
+    <enddate> 5/14/2014</enddate>
+    <begdatelong>Wednesday, May 14, 2014</begdatelong>
+    <enddatelong>Wednesday, May 14, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>206A-B</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>50</attendance>
+    <eventid>1405061</eventid>
+    <days>
+      <day> 5/14/2014</day>
+    </days>
+    <times>
+      <time> 5/14/2014  7:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/14/2014</date>
+    <datelong>Wednesday, May 14, 2014</datelong>
+    <name><![CDATA[Cable Luncheon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/14/2014</begdate>
+    <enddate> 5/14/2014</enddate>
+    <begdatelong>Wednesday, May 14, 2014</begdatelong>
+    <enddatelong>Wednesday, May 14, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location></location>
+    <nature>Meal Function</nature>
+    <attendance>325</attendance>
+    <eventid>1405054</eventid>
+    <days>
+      <day> 5/14/2014</day>
+    </days>
+    <times>
+      <time> 5/14/2014 11:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/16/2014</date>
+    <datelong>Friday, May 16, 2014</datelong>
+    <name><![CDATA[Conexion Americas]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/16/2014</begdate>
+    <enddate> 5/16/2014</enddate>
+    <begdatelong>Friday, May 16, 2014</begdatelong>
+    <enddatelong>Friday, May 16, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location></location>
+    <nature>Meal Function</nature>
+    <attendance>500</attendance>
+    <eventid>1405035</eventid>
+    <days>
+      <day> 5/16/2014</day>
+    </days>
+    <times>
+      <time> 5/16/2014  7:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/22/2014</date>
+    <datelong>Thursday, May 22, 2014</datelong>
+    <name><![CDATA[Verizon Wireless Customer Event]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/22/2014</begdate>
+    <enddate> 5/22/2014</enddate>
+    <begdatelong>Thursday, May 22, 2014</begdatelong>
+    <enddatelong>Thursday, May 22, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>201A-B</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>125</attendance>
+    <eventid>1405059</eventid>
+    <days>
+      <day> 5/22/2014</day>
+    </days>
+    <times>
+      <time> 5/22/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/28/2014 -  5/30/2014</date>
+    <datelong>Wednesday, May 28, 2014 - Friday, May 30, 2014</datelong>
+    <name><![CDATA[NATL Healthy Homes- HUD ]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/28/2014</begdate>
+    <enddate> 5/30/2014</enddate>
+    <begdatelong>Wednesday, May 28, 2014</begdatelong>
+    <enddatelong>Friday, May 30, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA2</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,500</attendance>
+    <eventid>1406008</eventid>
+    <days>
+      <day> 5/28/2014</day>
+      <day> 5/29/2014</day>
+      <day> 5/30/2014</day>
+    </days>
+    <times>
+      <time> 5/28/2014  8:00 AM</time>
+      <time> 5/28/2014  8:00 AM</time>
+      <time> 5/28/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 5/30/2014</date>
+    <datelong>Friday, May 30, 2014</datelong>
+    <name><![CDATA[TN. Republican Party Annual Statesmen's Dinner]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 5/30/2014</begdate>
+    <enddate> 5/30/2014</enddate>
+    <begdatelong>Friday, May 30, 2014</begdatelong>
+    <enddatelong>Friday, May 30, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BR-ABCS</location>
+    <nature>Meal Function</nature>
+    <attendance>1,200</attendance>
+    <eventid>1407042</eventid>
+    <days>
+      <day> 5/30/2014</day>
+    </days>
+    <times>
+      <time> 5/30/2014  5:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/ 1/2014</date>
+    <datelong>Sunday, June 01, 2014</datelong>
+    <name><![CDATA[Perfect Wedding Guide]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 6/ 1/2014</begdate>
+    <enddate> 6/ 1/2014</enddate>
+    <begdatelong>Sunday, June 01, 2014</begdatelong>
+    <enddatelong>Sunday, June 01, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA1</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>500</attendance>
+    <eventid>1407029</eventid>
+    <days>
+      <day> 6/ 1/2014</day>
+    </days>
+    <times>
+      <time> 6/ 1/2014 10:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/ 5/2014 -  6/ 8/2014</date>
+    <datelong>Thursday, June 05, 2014 - Sunday, June 08, 2014</datelong>
+    <name><![CDATA[CMA Music Fest ]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 6/ 5/2014</begdate>
+    <enddate> 6/ 8/2014</enddate>
+    <begdatelong>Thursday, June 05, 2014</begdatelong>
+    <enddatelong>Sunday, June 08, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA-D</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>55,000</attendance>
+    <eventid>1406004</eventid>
+    <days>
+      <day> 6/ 4/2014</day>
+      <day> 6/ 5/2014</day>
+      <day> 6/ 6/2014</day>
+      <day> 6/ 7/2014</day>
+      <day> 6/ 8/2014</day>
+    </days>
+    <times>
+      <time> 6/ 5/2014  8:00 AM</time>
+      <time> 6/ 5/2014  8:00 AM</time>
+      <time> 6/ 4/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/12/2014 -  6/14/2014</date>
+    <datelong>Thursday, June 12, 2014 - Saturday, June 14, 2014</datelong>
+    <name><![CDATA[Tennessee Grocers & Convenience Store Association]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/12/2014</begdate>
+    <enddate> 6/14/2014</enddate>
+    <begdatelong>Thursday, June 12, 2014</begdatelong>
+    <enddatelong>Saturday, June 14, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC</location>
+    <nature>Regional Convention</nature>
+    <attendance>250</attendance>
+    <eventid>1406013</eventid>
+    <days>
+      <day> 6/12/2014</day>
+      <day> 6/13/2014</day>
+      <day> 6/14/2014</day>
+    </days>
+    <times>
+      <time> 6/12/2014  8:00 AM</time>
+      <time> 6/12/2014  8:00 AM</time>
+      <time> 6/13/2014  8:00 AM</time>
+      <time> 6/12/2014 11:59 AM</time>
+      <time> 6/12/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/12/2014</date>
+    <datelong>Thursday, June 12, 2014</datelong>
+    <name><![CDATA[Dynamic Directions Regional Seminar]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/12/2014</begdate>
+    <enddate> 6/12/2014</enddate>
+    <begdatelong>Thursday, June 12, 2014</begdatelong>
+    <enddatelong>Thursday, June 12, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>107A-B</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>140</attendance>
+    <eventid>1406032</eventid>
+    <days>
+      <day> 6/12/2014</day>
+    </days>
+    <times>
+      <time> 6/12/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/12/2014</date>
+    <datelong>Thursday, June 12, 2014</datelong>
+    <name><![CDATA[MARS Petcare]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/12/2014</begdate>
+    <enddate> 6/12/2014</enddate>
+    <begdatelong>Thursday, June 12, 2014</begdatelong>
+    <enddatelong>Thursday, June 12, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BDR-A</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>12</attendance>
+    <eventid>1406040</eventid>
+    <days>
+      <day> 6/12/2014</day>
+    </days>
+    <times>
+      <time> 6/12/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/16/2014 -  6/18/2014</date>
+    <datelong>Monday, June 16, 2014 - Wednesday, June 18, 2014</datelong>
+    <name><![CDATA[Natl Emergency Number Assn ]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/16/2014</begdate>
+    <enddate> 6/18/2014</enddate>
+    <begdatelong>Monday, June 16, 2014</begdatelong>
+    <enddatelong>Wednesday, June 18, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA1</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,500</attendance>
+    <eventid>1406001</eventid>
+    <days>
+      <day> 6/10/2014</day>
+      <day> 6/11/2014</day>
+      <day> 6/12/2014</day>
+      <day> 6/13/2014</day>
+      <day> 6/14/2014</day>
+      <day> 6/15/2014</day>
+      <day> 6/16/2014</day>
+      <day> 6/17/2014</day>
+      <day> 6/18/2014</day>
+      <day> 6/19/2014</day>
+    </days>
+    <times>
+      <time> 6/15/2014  6:00 AM</time>
+      <time> 6/16/2014  6:00 AM</time>
+      <time> 6/14/2014  6:00 AM</time>
+      <time> 6/19/2014  6:00 AM</time>
+      <time> 6/13/2014  6:00 AM</time>
+      <time> 6/12/2014  6:00 AM</time>
+      <time> 6/12/2014  6:00 AM</time>
+      <time> 6/13/2014  4:00 PM</time>
+      <time> 6/10/2014  6:00 AM</time>
+      <time> 6/15/2014  6:00 AM</time>
+      <time> 6/14/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/16/2014 -  6/19/2014</date>
+    <datelong>Monday, June 16, 2014 - Thursday, June 19, 2014</datelong>
+    <name><![CDATA[Tennessee School Nutrition Association]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/16/2014</begdate>
+    <enddate> 6/19/2014</enddate>
+    <begdatelong>Monday, June 16, 2014</begdatelong>
+    <enddatelong>Thursday, June 19, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA2</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>1,000</attendance>
+    <eventid>1406018</eventid>
+    <days>
+      <day> 6/16/2014</day>
+      <day> 6/17/2014</day>
+      <day> 6/18/2014</day>
+      <day> 6/19/2014</day>
+    </days>
+    <times>
+      <time> 6/16/2014  8:00 AM</time>
+      <time> 6/16/2014  4:00 PM</time>
+      <time> 6/18/2014  8:00 AM</time>
+      <time> 6/19/2014  4:30 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/19/2014</date>
+    <datelong>Thursday, June 19, 2014</datelong>
+    <name><![CDATA[MARS Petcare]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/19/2014</begdate>
+    <enddate> 6/19/2014</enddate>
+    <begdatelong>Thursday, June 19, 2014</begdatelong>
+    <enddatelong>Thursday, June 19, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BDR-A</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>12</attendance>
+    <eventid>1406041</eventid>
+    <days>
+      <day> 6/19/2014</day>
+    </days>
+    <times>
+      <time> 6/19/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/20/2014</date>
+    <datelong>Friday, June 20, 2014</datelong>
+    <name><![CDATA[Association for Corporate Growth]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/20/2014</begdate>
+    <enddate> 6/20/2014</enddate>
+    <begdatelong>Friday, June 20, 2014</begdatelong>
+    <enddatelong>Friday, June 20, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>105A-B</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>500</attendance>
+    <eventid>1406026</eventid>
+    <days>
+      <day> 6/20/2014</day>
+    </days>
+    <times>
+      <time> 6/20/2014  7:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/22/2014 -  6/25/2014</date>
+    <datelong>Sunday, June 22, 2014 - Wednesday, June 25, 2014</datelong>
+    <name><![CDATA[Wound Ostomy Continence Nurse Soc ]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/22/2014</begdate>
+    <enddate> 6/25/2014</enddate>
+    <begdatelong>Sunday, June 22, 2014</begdatelong>
+    <enddatelong>Wednesday, June 25, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA1</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>3,200</attendance>
+    <eventid>1406002</eventid>
+    <days>
+      <day> 6/19/2014</day>
+      <day> 6/21/2014</day>
+      <day> 6/22/2014</day>
+      <day> 6/23/2014</day>
+      <day> 6/24/2014</day>
+      <day> 6/25/2014</day>
+    </days>
+    <times>
+      <time> 6/22/2014  8:00 AM</time>
+      <time> 6/22/2014  8:00 AM</time>
+      <time> 6/21/2014  8:00 AM</time>
+      <time> 6/21/2014  8:00 AM</time>
+      <time> 6/22/2014  8:00 AM</time>
+      <time> 6/23/2014  8:00 AM</time>
+      <time> 6/22/2014  8:00 AM</time>
+      <time> 6/22/2014  8:00 AM</time>
+      <time> 6/19/2014  8:00 AM</time>
+      <time> 6/22/2014  8:00 AM</time>
+      <time> 6/22/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/26/2014</date>
+    <datelong>Thursday, June 26, 2014</datelong>
+    <name><![CDATA[Brookside Properties Gala]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/26/2014</begdate>
+    <enddate> 6/26/2014</enddate>
+    <begdatelong>Thursday, June 26, 2014</begdatelong>
+    <enddatelong>Thursday, June 26, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BR-A1</location>
+    <nature>Meal Function</nature>
+    <attendance>120</attendance>
+    <eventid>1406017</eventid>
+    <days>
+      <day> 6/26/2014</day>
+    </days>
+    <times>
+      <time> 6/26/2014  5:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 6/29/2014 -  7/ 2/2014</date>
+    <datelong>Sunday, June 29, 2014 - Wednesday, July 02, 2014</datelong>
+    <name><![CDATA[Natl Assn of Student Financial Aid Administrators ]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 6/29/2014</begdate>
+    <enddate> 7/ 2/2014</enddate>
+    <begdatelong>Sunday, June 29, 2014</begdatelong>
+    <enddatelong>Wednesday, July 02, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,900</attendance>
+    <eventid>1406003</eventid>
+    <days>
+      <day> 6/28/2014</day>
+      <day> 6/29/2014</day>
+      <day> 6/30/2014</day>
+      <day> 7/ 1/2014</day>
+      <day> 7/ 2/2014</day>
+    </days>
+    <times>
+      <time> 6/29/2014  8:00 AM</time>
+      <time> 6/29/2014  8:00 AM</time>
+      <time> 6/28/2014  8:00 AM</time>
+      <time> 6/29/2014  8:00 AM</time>
+      <time> 6/29/2014  8:00 AM</time>
+      <time> 6/28/2014  8:00 AM</time>
+      <time> 6/28/2014  8:00 AM</time>
+      <time> 6/28/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/ 7/2014 -  7/11/2014</date>
+    <datelong>Monday, July 07, 2014 - Friday, July 11, 2014</datelong>
+    <name><![CDATA[Institute for CTE Educators]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/ 7/2014</begdate>
+    <enddate> 7/11/2014</enddate>
+    <begdatelong>Monday, July 07, 2014</begdatelong>
+    <enddatelong>Friday, July 11, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA2</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>2,000</attendance>
+    <eventid>1407027</eventid>
+    <days>
+      <day> 7/ 7/2014</day>
+      <day> 7/ 8/2014</day>
+      <day> 7/ 9/2014</day>
+      <day> 7/10/2014</day>
+      <day> 7/11/2014</day>
+    </days>
+    <times>
+      <time> 7/ 7/2014  8:00 AM</time>
+      <time> 7/ 7/2014  8:00 AM</time>
+      <time> 7/ 7/2014  8:00 AM</time>
+      <time> 7/ 8/2014  8:00 AM</time>
+      <time> 7/ 8/2014  8:00 AM</time>
+      <time> 7/10/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/ 9/2014 -  7/10/2014</date>
+    <datelong>Wednesday, July 09, 2014 - Thursday, July 10, 2014</datelong>
+    <name><![CDATA[INTL CNCL of Shopping Centers Tennessee/Kentucky Idea Exchange]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/ 9/2014</begdate>
+    <enddate> 7/10/2014</enddate>
+    <begdatelong>Wednesday, July 09, 2014</begdatelong>
+    <enddatelong>Thursday, July 10, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA1</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>600</attendance>
+    <eventid>1407017</eventid>
+    <days>
+      <day> 7/ 9/2014</day>
+      <day> 7/10/2014</day>
+    </days>
+    <times>
+      <time> 7/ 9/2014  8:00 AM</time>
+      <time> 7/ 9/2014  8:00 AM</time>
+      <time> 7/10/2014  8:00 AM</time>
+      <time> 7/ 9/2014  8:00 AM</time>
+      <time> 7/ 9/2014  8:00 AM</time>
+      <time> 7/10/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/ 9/2014</date>
+    <datelong>Wednesday, July 09, 2014</datelong>
+    <name><![CDATA[CABLE Luncheon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/ 9/2014</begdate>
+    <enddate> 7/ 9/2014</enddate>
+    <begdatelong>Wednesday, July 09, 2014</begdatelong>
+    <enddatelong>Wednesday, July 09, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101A-E</location>
+    <nature>Meal Function</nature>
+    <attendance>250</attendance>
+    <eventid>1407044</eventid>
+    <days>
+      <day> 7/ 9/2014</day>
+    </days>
+    <times>
+      <time> 7/ 9/2014 11:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/10/2014</date>
+    <datelong>Thursday, July 10, 2014</datelong>
+    <name><![CDATA[GBT Realty Corporation]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/10/2014</begdate>
+    <enddate> 7/10/2014</enddate>
+    <begdatelong>Thursday, July 10, 2014</begdatelong>
+    <enddatelong>Thursday, July 10, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>102-A</location>
+    <nature>Local Convention/Conference</nature>
+    <attendance>50</attendance>
+    <eventid>1407046</eventid>
+    <days>
+      <day> 7/10/2014</day>
+    </days>
+    <times>
+      <time> 7/10/2014  7:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/10/2014</date>
+    <datelong>Thursday, July 10, 2014</datelong>
+    <name><![CDATA[The Shopping Centers Group]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/10/2014</begdate>
+    <enddate> 7/10/2014</enddate>
+    <begdatelong>Thursday, July 10, 2014</begdatelong>
+    <enddatelong>Thursday, July 10, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>102-B</location>
+    <nature>Local Convention/Conference</nature>
+    <attendance>50</attendance>
+    <eventid>1407045</eventid>
+    <days>
+      <day> 7/10/2014</day>
+    </days>
+    <times>
+      <time> 7/10/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/14/2014 -  7/16/2014</date>
+    <datelong>Monday, July 14, 2014 - Wednesday, July 16, 2014</datelong>
+    <name><![CDATA[Desire2Learn Fusion Users Conference]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/14/2014</begdate>
+    <enddate> 7/16/2014</enddate>
+    <begdatelong>Monday, July 14, 2014</begdatelong>
+    <enddatelong>Wednesday, July 16, 2014</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">Founded in 1999, </font>Desire2Learn Incorporated is a leader in providing innovative learning solutions to K-12, Higher Ed, Corporate, Government and Healthcare organizations worldwide. We have a proven track record of client success. Our outstanding service and support has made us the partner of choice for leading organizations around the globe.<br>Whether your organization is a few people or tens of thousands, we collaborate with you to provide the right solution for your unique vision, specifications, and budget. We take great pride in providing our clients with the best learning environment possible.<br>As our name suggests, we're passionate about creating solutions that can ignite the desire to learn in anyone. We're driven to make a real difference in people's lives, which is why nearly half of our staff is dedicated to research and development. With a focus on user experience, accessibility, mobility, platform security and reliability we deliver systems that our clients and their learners can count on anywhere, anytime.<br><br>]]></description>
+    <location>101-A</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,200</attendance>
+    <eventid>1407004</eventid>
+    <days>
+      <day> 7/ 8/2014</day>
+      <day> 7/ 9/2014</day>
+      <day> 7/10/2014</day>
+      <day> 7/11/2014</day>
+      <day> 7/12/2014</day>
+      <day> 7/13/2014</day>
+      <day> 7/14/2014</day>
+      <day> 7/15/2014</day>
+      <day> 7/16/2014</day>
+      <day> 7/17/2014</day>
+      <day> 7/18/2014</day>
+    </days>
+    <times>
+      <time> 7/14/2014  8:00 AM</time>
+      <time> 7/14/2014  8:00 AM</time>
+      <time> 7/14/2014  8:00 AM</time>
+      <time> 7/17/2014  8:00 AM</time>
+      <time> 7/ 8/2014  8:00 AM</time>
+      <time> 7/17/2014  8:00 AM</time>
+      <time> 7/13/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/17/2014 -  7/19/2014</date>
+    <datelong>Thursday, July 17, 2014 - Saturday, July 19, 2014</datelong>
+    <name><![CDATA[NAMM]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/17/2014</begdate>
+    <enddate> 7/19/2014</enddate>
+    <begdatelong>Thursday, July 17, 2014</begdatelong>
+    <enddatelong>Saturday, July 19, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>13,000</attendance>
+    <eventid>1407001</eventid>
+    <days>
+      <day> 7/17/2014</day>
+      <day> 7/18/2014</day>
+      <day> 7/19/2014</day>
+    </days>
+    <times>
+      <time> 7/17/2014  8:00 AM</time>
+      <time> 7/17/2014  8:00 AM</time>
+      <time> 7/18/2014  8:00 AM</time>
+      <time> 7/17/2014  8:00 AM</time>
+      <time> 7/17/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/22/2014 -  7/24/2014</date>
+    <datelong>Tuesday, July 22, 2014 - Thursday, July 24, 2014</datelong>
+    <name><![CDATA[PennWell HydroVision International]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/22/2014</begdate>
+    <enddate> 7/24/2014</enddate>
+    <begdatelong>Tuesday, July 22, 2014</begdatelong>
+    <enddatelong>Thursday, July 24, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC</location>
+    <nature>National Trade Show</nature>
+    <attendance>4,000</attendance>
+    <eventid>1407002</eventid>
+    <days>
+      <day> 7/20/2014</day>
+      <day> 7/21/2014</day>
+      <day> 7/22/2014</day>
+      <day> 7/23/2014</day>
+      <day> 7/24/2014</day>
+      <day> 7/25/2014</day>
+    </days>
+    <times>
+      <time> 7/22/2014  8:00 AM</time>
+      <time> 7/22/2014  8:00 AM</time>
+      <time> 7/20/2014  8:00 AM</time>
+      <time> 7/20/2014  8:00 AM</time>
+      <time> 7/22/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/27/2014 -  7/29/2014</date>
+    <datelong>Sunday, July 27, 2014 - Tuesday, July 29, 2014</datelong>
+    <name><![CDATA[HCA Healthcare]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/27/2014</begdate>
+    <enddate> 7/29/2014</enddate>
+    <begdatelong>Sunday, July 27, 2014</begdatelong>
+    <enddatelong>Tuesday, July 29, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>201A-B</location>
+    <nature>Local Meeting/Seminar</nature>
+    <attendance>140</attendance>
+    <eventid>1407041</eventid>
+    <days>
+      <day> 7/27/2014</day>
+      <day> 7/28/2014</day>
+      <day> 7/29/2014</day>
+    </days>
+    <times>
+      <time> 7/27/2014  6:00 PM</time>
+      <time> 7/28/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/29/2014 -  7/30/2014</date>
+    <datelong>Tuesday, July 29, 2014 - Wednesday, July 30, 2014</datelong>
+    <name><![CDATA[The Tennessee Bar Examination]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/29/2014</begdate>
+    <enddate> 7/30/2014</enddate>
+    <begdatelong>Tuesday, July 29, 2014</begdatelong>
+    <enddatelong>Wednesday, July 30, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA1</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>400</attendance>
+    <eventid>1407030</eventid>
+    <days>
+      <day> 7/29/2014</day>
+      <day> 7/30/2014</day>
+    </days>
+    <times>
+      <time> 7/29/2014  9:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/30/2014 -  7/31/2014</date>
+    <datelong>Wednesday, July 30, 2014 - Thursday, July 31, 2014</datelong>
+    <name><![CDATA[SVMIC Physicians Training]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/30/2014</begdate>
+    <enddate> 7/31/2014</enddate>
+    <begdatelong>Wednesday, July 30, 2014</begdatelong>
+    <enddatelong>Thursday, July 31, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>201A-B</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>600</attendance>
+    <eventid>1407032</eventid>
+    <days>
+      <day> 7/30/2014</day>
+      <day> 7/31/2014</day>
+    </days>
+    <times>
+      <time> 7/30/2014 12:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 7/30/2014 -  8/ 1/2014</date>
+    <datelong>Wednesday, July 30, 2014 - Friday, August 01, 2014</datelong>
+    <name><![CDATA[American Institute of Architects TN]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 7/30/2014</begdate>
+    <enddate> 8/ 1/2014</enddate>
+    <begdatelong>Wednesday, July 30, 2014</begdatelong>
+    <enddatelong>Friday, August 01, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>207A-D</location>
+    <nature>Regional Convention</nature>
+    <attendance>250</attendance>
+    <eventid>1407034</eventid>
+    <days>
+      <day> 7/30/2014</day>
+      <day> 7/31/2014</day>
+      <day> 8/ 1/2014</day>
+    </days>
+    <times>
+      <time> 7/30/2014  1:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/14/2014</date>
+    <datelong>Thursday, August 14, 2014</datelong>
+    <name><![CDATA[Making Strides Against Breast Cancer Kickoff BreakfAmerican Cancer Socifast]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/14/2014</begdate>
+    <enddate> 8/14/2014</enddate>
+    <begdatelong>Thursday, August 14, 2014</begdatelong>
+    <enddatelong>Thursday, August 14, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BDR-B</location>
+    <nature>Meal Function</nature>
+    <attendance>650</attendance>
+    <eventid>1408040</eventid>
+    <days>
+      <day> 8/14/2014</day>
+    </days>
+    <times>
+      <time> 8/14/2014  7:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/14/2014 -  8/15/2014</date>
+    <datelong>Thursday, August 14, 2014 - Friday, August 15, 2014</datelong>
+    <name><![CDATA[TN Assn of Institutional Research]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/14/2014</begdate>
+    <enddate> 8/15/2014</enddate>
+    <begdatelong>Thursday, August 14, 2014</begdatelong>
+    <enddatelong>Friday, August 15, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>105A-B</location>
+    <nature>Local Meeting/Seminar</nature>
+    <attendance>70</attendance>
+    <eventid>1408038</eventid>
+    <days>
+      <day> 8/14/2014</day>
+      <day> 8/15/2014</day>
+    </days>
+    <times>
+      <time> 8/14/2014 12:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/16/2014 -  8/17/2014</date>
+    <datelong>Saturday, August 16, 2014 - Sunday, August 17, 2014</datelong>
+    <name><![CDATA[National Network of Embroidery Professionals - Embroidery Mart East]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/16/2014</begdate>
+    <enddate> 8/17/2014</enddate>
+    <begdatelong>Saturday, August 16, 2014</begdatelong>
+    <enddatelong>Sunday, August 17, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA2</location>
+    <nature>Regional Trade Show</nature>
+    <attendance>1,000</attendance>
+    <eventid>1408008</eventid>
+    <days>
+      <day> 8/14/2014</day>
+      <day> 8/15/2014</day>
+      <day> 8/16/2014</day>
+      <day> 8/17/2014</day>
+    </days>
+    <times>
+      <time> 8/16/2014  6:00 AM</time>
+      <time> 8/15/2014  6:00 AM</time>
+      <time> 8/14/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/20/2014 -  8/21/2014</date>
+    <datelong>Wednesday, August 20, 2014 - Thursday, August 21, 2014</datelong>
+    <name><![CDATA[PennWell Coal-Gen]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/20/2014</begdate>
+    <enddate> 8/21/2014</enddate>
+    <begdatelong>Wednesday, August 20, 2014</begdatelong>
+    <enddatelong>Thursday, August 21, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhB</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>3,000</attendance>
+    <eventid>1408002</eventid>
+    <days>
+      <day> 8/19/2014</day>
+      <day> 8/20/2014</day>
+      <day> 8/21/2014</day>
+      <day> 8/22/2014</day>
+    </days>
+    <times>
+      <time> 8/20/2014  8:00 AM</time>
+      <time> 8/20/2014  8:00 AM</time>
+      <time> 8/19/2014  8:00 AM</time>
+      <time> 8/19/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/21/2014</date>
+    <datelong>Thursday, August 21, 2014</datelong>
+    <name><![CDATA[The Hanover Insurance Company]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/21/2014</begdate>
+    <enddate> 8/21/2014</enddate>
+    <begdatelong>Thursday, August 21, 2014</begdatelong>
+    <enddatelong>Thursday, August 21, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>105-A</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>75</attendance>
+    <eventid>1408044</eventid>
+    <days>
+      <day> 8/21/2014</day>
+    </days>
+    <times>
+      <time> 8/21/2014  8:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/23/2014 -  8/25/2014</date>
+    <datelong>Saturday, August 23, 2014 - Monday, August 25, 2014</datelong>
+    <name><![CDATA[Mega Group USA]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/23/2014</begdate>
+    <enddate> 8/25/2014</enddate>
+    <begdatelong>Saturday, August 23, 2014</begdatelong>
+    <enddatelong>Monday, August 25, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA1</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>900</attendance>
+    <eventid>1408005</eventid>
+    <days>
+      <day> 8/21/2014</day>
+      <day> 8/22/2014</day>
+      <day> 8/23/2014</day>
+      <day> 8/24/2014</day>
+      <day> 8/25/2014</day>
+    </days>
+    <times>
+      <time> 8/23/2014  8:00 AM</time>
+      <time> 8/24/2014  8:00 AM</time>
+      <time> 8/21/2014  8:00 AM</time>
+      <time> 8/22/2014  8:00 AM</time>
+      <time> 8/23/2014  8:00 AM</time>
+      <time> 8/23/2014  8:00 AM</time>
+      <time> 8/22/2014  8:00 AM</time>
+      <time> 8/24/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/24/2014</date>
+    <datelong>Sunday, August 24, 2014</datelong>
+    <name><![CDATA[The Nashville Pink Bridal Show]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 8/24/2014</begdate>
+    <enddate> 8/24/2014</enddate>
+    <begdatelong>Sunday, August 24, 2014</begdatelong>
+    <enddatelong>Sunday, August 24, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>4,000</attendance>
+    <eventid>1408021</eventid>
+    <days>
+      <day> 8/24/2014</day>
+    </days>
+    <times>
+      <time> 8/24/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/25/2014 -  8/27/2014</date>
+    <datelong>Monday, August 25, 2014 - Wednesday, August 27, 2014</datelong>
+    <name><![CDATA[Tennessee Health Care Association]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/25/2014</begdate>
+    <enddate> 8/27/2014</enddate>
+    <begdatelong>Monday, August 25, 2014</begdatelong>
+    <enddatelong>Wednesday, August 27, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA2</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>1,200</attendance>
+    <eventid>1408011</eventid>
+    <days>
+      <day> 8/25/2014</day>
+      <day> 8/26/2014</day>
+      <day> 8/27/2014</day>
+    </days>
+    <times>
+      <time> 8/25/2014  8:00 AM</time>
+      <time> 8/25/2014  8:00 AM</time>
+      <time> 8/25/2014  8:00 AM</time>
+      <time> 8/27/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/26/2014 -  8/29/2014</date>
+    <datelong>Tuesday, August 26, 2014 - Friday, August 29, 2014</datelong>
+    <name><![CDATA[TN. American Planning Assoc/Transportation Research Board - ADC-10 Committee]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/26/2014</begdate>
+    <enddate> 8/29/2014</enddate>
+    <begdatelong>Tuesday, August 26, 2014</begdatelong>
+    <enddatelong>Friday, August 29, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101A-E</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>250</attendance>
+    <eventid>1408034</eventid>
+    <days>
+      <day> 8/26/2014</day>
+      <day> 8/27/2014</day>
+      <day> 8/28/2014</day>
+      <day> 8/29/2014</day>
+    </days>
+    <times>
+      <time> 8/26/2014  8:00 AM</time>
+      <time> 8/26/2014  8:00 AM</time>
+      <time> 8/26/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/27/2014</date>
+    <datelong>Wednesday, August 27, 2014</datelong>
+    <name><![CDATA[Associated Wholesale Grocers Food Show]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/27/2014</begdate>
+    <enddate> 8/27/2014</enddate>
+    <begdatelong>Wednesday, August 27, 2014</begdatelong>
+    <enddatelong>Wednesday, August 27, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC</location>
+    <nature>Regional Trade Show</nature>
+    <attendance>600</attendance>
+    <eventid>1408015</eventid>
+    <days>
+      <day> 8/27/2014</day>
+    </days>
+    <times>
+      <time> 8/27/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 8/27/2014 -  8/29/2014</date>
+    <datelong>Wednesday, August 27, 2014 - Friday, August 29, 2014</datelong>
+    <name><![CDATA[Tractor Supply Leader & Summer Meeting]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 8/27/2014</begdate>
+    <enddate> 8/29/2014</enddate>
+    <begdatelong>Wednesday, August 27, 2014</begdatelong>
+    <enddatelong>Friday, August 29, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA2</location>
+    <nature>National Meeting/Seminar</nature>
+    <attendance>750</attendance>
+    <eventid>1408027</eventid>
+    <days>
+      <day> 8/28/2014</day>
+      <day> 8/29/2014</day>
+    </days>
+    <times>
+      <time> 8/28/2014  8:00 AM</time>
+      <time> 8/28/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/ 3/2014 -  9/ 4/2014</date>
+    <datelong>Wednesday, September 03, 2014 - Thursday, September 04, 2014</datelong>
+    <name><![CDATA[Governor's Housing Summit]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/ 3/2014</begdate>
+    <enddate> 9/ 4/2014</enddate>
+    <begdatelong>Wednesday, September 03, 2014</begdatelong>
+    <enddatelong>Thursday, September 04, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>104A-D</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>550</attendance>
+    <eventid>1409051</eventid>
+    <days>
+      <day> 9/ 2/2014</day>
+      <day> 9/ 3/2014</day>
+      <day> 9/ 4/2014</day>
+    </days>
+    <times>
+      <time> 9/ 3/2014  8:00 AM</time>
+      <time> 9/ 2/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/ 5/2014 -  9/ 7/2014</date>
+    <datelong>Friday, September 05, 2014 - Sunday, September 07, 2014</datelong>
+    <name><![CDATA[Home Decorating & Remodeling Consumer Show ]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 9/ 5/2014</begdate>
+    <enddate> 9/ 7/2014</enddate>
+    <begdatelong>Friday, September 05, 2014</begdatelong>
+    <enddatelong>Sunday, September 07, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC-D</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>5,000</attendance>
+    <eventid>1409003</eventid>
+    <days>
+      <day> 9/ 5/2014</day>
+      <day> 9/ 6/2014</day>
+      <day> 9/ 7/2014</day>
+    </days>
+    <times>
+      <time> 9/ 5/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/ 7/2014 -  9/ 9/2014</date>
+    <datelong>Sunday, September 07, 2014 - Tuesday, September 09, 2014</datelong>
+    <name><![CDATA[National Association for Healthcare Quality]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/ 7/2014</begdate>
+    <enddate> 9/ 9/2014</enddate>
+    <begdatelong>Sunday, September 07, 2014</begdatelong>
+    <enddatelong>Tuesday, September 09, 2014</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">Quality and patient safety professionals are an integral part of the success of today\rquote s modern healthcare system. They impact every aspect of the healthcare process in facilities large and small, from major metropolitan health centers to local long-term care facilities.<br>A quality professional addresses many issues in the healthcare workplace, such as<br><ul><li></font>\sb100\\sa100 medication reconciliation <li>mortality and incident rate reduction <li>risk management <li>core measures <li>patient safety <li>quality management <li>quality improvement. \sb100\\sa100 </ul>Healthcare quality professionals ensure their facility meets specific requirements set forth by accrediting bodies for healthcare organizations and programs, such as The Joint Commission and Centers for Medicare & Medicaid Services.</ul><br><br>]]></description>
+    <location>ExhA2</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>800</attendance>
+    <eventid>1409002</eventid>
+    <days>
+      <day> 9/ 4/2014</day>
+      <day> 9/ 5/2014</day>
+      <day> 9/ 6/2014</day>
+      <day> 9/ 7/2014</day>
+      <day> 9/ 8/2014</day>
+      <day> 9/ 9/2014</day>
+    </days>
+    <times>
+      <time> 9/ 7/2014  8:00 AM</time>
+      <time> 9/ 7/2014  8:00 AM</time>
+      <time> 9/ 4/2014  8:00 AM</time>
+      <time> 9/ 7/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/10/2014</date>
+    <datelong>Wednesday, September 10, 2014</datelong>
+    <name><![CDATA[CABLE Luncheon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/10/2014</begdate>
+    <enddate> 9/10/2014</enddate>
+    <begdatelong>Wednesday, September 10, 2014</begdatelong>
+    <enddatelong>Wednesday, September 10, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101A-E</location>
+    <nature>Meal Function</nature>
+    <attendance>250</attendance>
+    <eventid>1409063</eventid>
+    <days>
+      <day> 9/10/2014</day>
+    </days>
+    <times>
+      <time> 9/10/2014 11:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/11/2014</date>
+    <datelong>Thursday, September 11, 2014</datelong>
+    <name><![CDATA[Middle Tennessee Realtors Convention]]></name>
+    <url><![CDATA[http://www.]]></url>
+    <open>No</open>
+    <begdate> 9/11/2014</begdate>
+    <enddate> 9/11/2014</enddate>
+    <begdatelong>Thursday, September 11, 2014</begdatelong>
+    <enddatelong>Thursday, September 11, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA2</location>
+    <nature>Regional Convention</nature>
+    <attendance>500</attendance>
+    <eventid>1409038</eventid>
+    <days>
+      <day> 9/11/2014</day>
+    </days>
+    <times>
+      <time> 9/11/2014  6:00 AM</time>
+      <time> 9/11/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/15/2014 -  9/17/2014</date>
+    <datelong>Monday, September 15, 2014 - Wednesday, September 17, 2014</datelong>
+    <name><![CDATA[HIMSS Summit of the Southeast]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/15/2014</begdate>
+    <enddate> 9/17/2014</enddate>
+    <begdatelong>Monday, September 15, 2014</begdatelong>
+    <enddatelong>Wednesday, September 17, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA1</location>
+    <nature>Regional Convention</nature>
+    <attendance>600</attendance>
+    <eventid>1409035</eventid>
+    <days>
+      <day> 9/15/2014</day>
+      <day> 9/16/2014</day>
+      <day> 9/17/2014</day>
+    </days>
+    <times>
+      <time> 9/16/2014  6:00 AM</time>
+      <time> 9/16/2014  6:00 AM</time>
+      <time> 9/16/2014  8:00 AM</time>
+      <time> 9/15/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/18/2014 -  9/19/2014</date>
+    <datelong>Thursday, September 18, 2014 - Friday, September 19, 2014</datelong>
+    <name><![CDATA[TN Law Institute]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/18/2014</begdate>
+    <enddate> 9/19/2014</enddate>
+    <begdatelong>Thursday, September 18, 2014</begdatelong>
+    <enddatelong>Friday, September 19, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>104A-E</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>300</attendance>
+    <eventid>1409054</eventid>
+    <days>
+      <day> 9/18/2014</day>
+      <day> 9/19/2014</day>
+    </days>
+    <times>
+      <time> 9/18/2014  7:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/18/2014</date>
+    <datelong>Thursday, September 18, 2014</datelong>
+    <name><![CDATA[2014 INVESTTennessee Equity Conference]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/18/2014</begdate>
+    <enddate> 9/18/2014</enddate>
+    <begdatelong>Thursday, September 18, 2014</begdatelong>
+    <enddatelong>Thursday, September 18, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>208-A</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>225</attendance>
+    <eventid>1409046</eventid>
+    <days>
+      <day> 9/18/2014</day>
+    </days>
+    <times>
+      <time> 9/18/2014  8:00 AM</time>
+      <time> 9/18/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/19/2014</date>
+    <datelong>Friday, September 19, 2014</datelong>
+    <name><![CDATA[TOPS 2014 ]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/19/2014</begdate>
+    <enddate> 9/19/2014</enddate>
+    <begdatelong>Friday, September 19, 2014</begdatelong>
+    <enddatelong>Friday, September 19, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>201A-B</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>80</attendance>
+    <eventid>1409047</eventid>
+    <days>
+      <day> 9/19/2014</day>
+    </days>
+    <times>
+      <time> 9/19/2014  9:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/20/2014 -  9/21/2014</date>
+    <datelong>Saturday, September 20, 2014 - Sunday, September 21, 2014</datelong>
+    <name><![CDATA[WSMV Channel 4 Healthy 4 Life Expo -NE]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/20/2014</begdate>
+    <enddate> 9/21/2014</enddate>
+    <begdatelong>Saturday, September 20, 2014</begdatelong>
+    <enddatelong>Sunday, September 21, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhB</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>20,000</attendance>
+    <eventid>1409039</eventid>
+    <days>
+      <day> 9/20/2014</day>
+      <day> 9/21/2014</day>
+    </days>
+    <times>
+      <time> 9/20/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/20/2014</date>
+    <datelong>Saturday, September 20, 2014</datelong>
+    <name><![CDATA[Jordan Wyman Wedding]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/20/2014</begdate>
+    <enddate> 9/20/2014</enddate>
+    <begdatelong>Saturday, September 20, 2014</begdatelong>
+    <enddatelong>Saturday, September 20, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>201A-B</location>
+    <nature>Meal Function</nature>
+    <attendance>70</attendance>
+    <eventid>1409062</eventid>
+    <days>
+      <day> 9/20/2014</day>
+    </days>
+    <times>
+      <time> 9/20/2014  7:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/22/2014 -  9/24/2014</date>
+    <datelong>Monday, September 22, 2014 - Wednesday, September 24, 2014</datelong>
+    <name><![CDATA[ASSN of Air Medical Services ]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/22/2014</begdate>
+    <enddate> 9/24/2014</enddate>
+    <begdatelong>Monday, September 22, 2014</begdatelong>
+    <enddatelong>Wednesday, September 24, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC-D</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,800</attendance>
+    <eventid>1409006</eventid>
+    <days>
+      <day> 9/17/2014</day>
+      <day> 9/18/2014</day>
+      <day> 9/19/2014</day>
+      <day> 9/21/2014</day>
+      <day> 9/22/2014</day>
+      <day> 9/23/2014</day>
+      <day> 9/24/2014</day>
+    </days>
+    <times>
+      <time> 9/21/2014  8:00 AM</time>
+      <time> 9/22/2014  8:00 AM</time>
+      <time> 9/22/2014  8:00 AM</time>
+      <time> 9/22/2014  8:00 AM</time>
+      <time> 9/17/2014  8:00 AM</time>
+      <time> 9/21/2014  8:00 AM</time>
+      <time> 9/21/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/26/2014 -  9/28/2014</date>
+    <datelong>Friday, September 26, 2014 - Sunday, September 28, 2014</datelong>
+    <name><![CDATA[Wizard World Comic Con ]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 9/26/2014</begdate>
+    <enddate> 9/28/2014</enddate>
+    <begdatelong>Friday, September 26, 2014</begdatelong>
+    <enddatelong>Sunday, September 28, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA-B</location>
+    <nature>Public Spectator Event</nature>
+    <attendance>5,000</attendance>
+    <eventid>1409019</eventid>
+    <days>
+      <day> 9/25/2014</day>
+      <day> 9/26/2014</day>
+      <day> 9/27/2014</day>
+      <day> 9/28/2014</day>
+    </days>
+    <times>
+      <time> 9/26/2014  8:00 AM</time>
+      <time> 9/27/2014  8:00 AM</time>
+      <time> 9/27/2014  8:00 AM</time>
+      <time> 9/25/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 9/30/2014</date>
+    <datelong>Tuesday, September 30, 2014</datelong>
+    <name><![CDATA[Greater Indianapolis Chamber of Commerce]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 9/30/2014</begdate>
+    <enddate> 9/30/2014</enddate>
+    <begdatelong>Tuesday, September 30, 2014</begdatelong>
+    <enddatelong>Tuesday, September 30, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>201A-B</location>
+    <nature>Meal Function</nature>
+    <attendance>100</attendance>
+    <eventid>1409067</eventid>
+    <days>
+      <day> 9/30/2014</day>
+    </days>
+    <times>
+      <time> 9/30/2014  9:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/ 1/2014 - 10/ 3/2014</date>
+    <datelong>Wednesday, October 01, 2014 - Friday, October 03, 2014</datelong>
+    <name><![CDATA[Tennessee Nursery & Landscape Association]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/ 1/2014</begdate>
+    <enddate>10/ 3/2014</enddate>
+    <begdatelong>Wednesday, October 01, 2014</begdatelong>
+    <enddatelong>Friday, October 03, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhD</location>
+    <nature>Regional Convention</nature>
+    <attendance>1,200</attendance>
+    <eventid>1410018</eventid>
+    <days>
+      <day>10/ 1/2014</day>
+      <day>10/ 2/2014</day>
+      <day>10/ 3/2014</day>
+    </days>
+    <times>
+      <time>10/ 1/2014  8:00 AM</time>
+      <time>10/ 1/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/ 2/2014 - 10/ 4/2014</date>
+    <datelong>Thursday, October 02, 2014 - Saturday, October 04, 2014</datelong>
+    <name><![CDATA[Dental Summit]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/ 2/2014</begdate>
+    <enddate>10/ 4/2014</enddate>
+    <begdatelong>Thursday, October 02, 2014</begdatelong>
+    <enddatelong>Saturday, October 04, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>208A-B</location>
+    <nature>Local Meeting/Seminar</nature>
+    <attendance>500</attendance>
+    <eventid>1410040</eventid>
+    <days>
+      <day>10/ 2/2014</day>
+      <day>10/ 3/2014</day>
+      <day>10/ 4/2014</day>
+    </days>
+    <times>
+      <time>10/ 2/2014  8:00 AM</time>
+      <time>10/ 2/2014 12:00 PM</time>
+      <time>10/ 3/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/ 4/2014 - 10/ 5/2014</date>
+    <datelong>Saturday, October 04, 2014 - Sunday, October 05, 2014</datelong>
+    <name><![CDATA[Smart Tan Downtown]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/ 4/2014</begdate>
+    <enddate>10/ 5/2014</enddate>
+    <begdatelong>Saturday, October 04, 2014</begdatelong>
+    <enddatelong>Sunday, October 05, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>2,200</attendance>
+    <eventid>1409055</eventid>
+    <days>
+      <day>10/ 3/2014</day>
+      <day>10/ 4/2014</day>
+      <day>10/ 5/2014</day>
+    </days>
+    <times>
+      <time>10/ 4/2014  6:00 AM</time>
+      <time>10/ 4/2014  6:00 AM</time>
+      <time>10/ 4/2014  6:00 AM</time>
+      <time>10/ 3/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/ 5/2014</date>
+    <datelong>Sunday, October 05, 2014</datelong>
+    <name><![CDATA[Songwriters Hall of Fame Dinner]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/ 5/2014</begdate>
+    <enddate>10/ 5/2014</enddate>
+    <begdatelong>Sunday, October 05, 2014</begdatelong>
+    <enddatelong>Sunday, October 05, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BR-BCS</location>
+    <nature>Meal Function</nature>
+    <attendance>900</attendance>
+    <eventid>1410009</eventid>
+    <days>
+      <day>10/ 5/2014</day>
+    </days>
+    <times>
+      <time>10/ 5/2014  5:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/ 6/2014 - 10/ 8/2014</date>
+    <datelong>Monday, October 06, 2014 - Wednesday, October 08, 2014</datelong>
+    <name><![CDATA[GMRC Gas Machinery Conference]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/ 6/2014</begdate>
+    <enddate>10/ 8/2014</enddate>
+    <begdatelong>Monday, October 06, 2014</begdatelong>
+    <enddatelong>Wednesday, October 08, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,100</attendance>
+    <eventid>1410004</eventid>
+    <days>
+      <day>10/ 4/2014</day>
+      <day>10/ 5/2014</day>
+      <day>10/ 6/2014</day>
+      <day>10/ 7/2014</day>
+      <day>10/ 8/2014</day>
+    </days>
+    <times>
+      <time>10/ 7/2014  8:00 AM</time>
+      <time>10/ 5/2014  8:00 AM</time>
+      <time>10/ 6/2014  8:00 AM</time>
+      <time>10/ 6/2014  8:00 AM</time>
+      <time>10/ 6/2014  8:00 AM</time>
+      <time>10/ 4/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/ 8/2014</date>
+    <datelong>Wednesday, October 08, 2014</datelong>
+    <name><![CDATA[VMWare User Group]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/ 8/2014</begdate>
+    <enddate>10/ 8/2014</enddate>
+    <begdatelong>Wednesday, October 08, 2014</begdatelong>
+    <enddatelong>Wednesday, October 08, 2014</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">Mission<br>The </font>VMware User Group (VMUG) is an independent, global, customer-led organization, created to maximize members\rquote  use of VMware and partner solutions through knowledge sharing, training, collaboration, and events.<br>History<br>The independent global VMUG organization was officially launched in August of 2010. Prior to that point, VMUG chapters had operated locally with the support of VMware. These local groups grew rapidly \endash  membership increased 234% in 2008-2009 alone. Because of this unparalleled growth, a decision was made to bring all of these chapters together under one global VMUG umbrella operating independently of VMware. The organization benefits the membership and VMware by:<br><ul><li>\sb100\\sa100 Ensuring a consistent and high quality experience for all VMUG members <li>Providing a more effective interface between VMware and our customer base <li>Creating a cohesive network of VMware customers and partners with a collective voice capable of impacting VMware products and services <li>Establishing a support system and business model that allows the local VMUG leaders and VMware to move beyond tactical support into more strategic initiatives\sb100\\sa100 </ul>In early 2010, a steering committee of VMUG chapter leaders was formed to chart the course for the launch and development of the global VMUG organization. From that steering committee, an inaugural volunteer Board of Directors was formed and the new global VMUG was launched to the membership at VMworld 2010.</ul><br><br>]]></description>
+    <location>101A-E</location>
+    <nature>National Meeting/Seminar</nature>
+    <attendance>350</attendance>
+    <eventid>1410032</eventid>
+    <days>
+      <day>10/ 8/2014</day>
+    </days>
+    <times>
+      <time>10/ 8/2014  8:00 AM</time>
+      <time>10/ 8/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/ 8/2014</date>
+    <datelong>Wednesday, October 08, 2014</datelong>
+    <name><![CDATA[CABLE Luncheon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/ 8/2014</begdate>
+    <enddate>10/ 8/2014</enddate>
+    <begdatelong>Wednesday, October 08, 2014</begdatelong>
+    <enddatelong>Wednesday, October 08, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location></location>
+    <nature>Meal Function</nature>
+    <attendance>250</attendance>
+    <eventid>1410049</eventid>
+    <days>
+      <day>10/ 8/2014</day>
+    </days>
+    <times>
+      <time>10/ 8/2014 11:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/13/2014 - 10/15/2014</date>
+    <datelong>Monday, October 13, 2014 - Wednesday, October 15, 2014</datelong>
+    <name><![CDATA[National Funeral Directors Association Intl. Conf. & Expo]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/13/2014</begdate>
+    <enddate>10/15/2014</enddate>
+    <begdatelong>Monday, October 13, 2014</begdatelong>
+    <enddatelong>Wednesday, October 15, 2014</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">These days, there\rquote s a new frontier in funeral service, one where service is valued over product, where originality trumps one-size-fits-all solutions, where funerals are as likely to be a celebration of life as they are an observance of death. To survive\emdash and thrive\emdash in this brave, new world, you need a partner who can help you understand the lay of the land, stand by you as you stake your claim in it and show you how to turn change into opportunity.<br>In short, you need a partner like the National Funeral Directors Association. </font>NFDA has been a leading voice in the profession for 120 years, tracking trends and uncovering new paths to success for funeral directors.<br><br>]]></description>
+    <location>ExhB-D</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>6,000</attendance>
+    <eventid>1410003</eventid>
+    <days>
+      <day>10/11/2014</day>
+      <day>10/12/2014</day>
+      <day>10/13/2014</day>
+      <day>10/14/2014</day>
+      <day>10/15/2014</day>
+    </days>
+    <times>
+      <time>10/13/2014  8:00 AM</time>
+      <time>10/13/2014  8:00 AM</time>
+      <time>10/12/2014  8:00 AM</time>
+      <time>10/11/2014  8:00 AM</time>
+      <time>10/11/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/16/2014 - 10/17/2014</date>
+    <datelong>Thursday, October 16, 2014 - Friday, October 17, 2014</datelong>
+    <name><![CDATA[DBC Pri-Med LLC]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/16/2014</begdate>
+    <enddate>10/17/2014</enddate>
+    <begdatelong>Thursday, October 16, 2014</begdatelong>
+    <enddatelong>Friday, October 17, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>206A-B</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>300</attendance>
+    <eventid>1409042</eventid>
+    <days>
+      <day>10/16/2014</day>
+      <day>10/17/2014</day>
+    </days>
+    <times>
+      <time>10/16/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/23/2014</date>
+    <datelong>Thursday, October 23, 2014</datelong>
+    <name><![CDATA[Auto Symposium]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/23/2014</begdate>
+    <enddate>10/23/2014</enddate>
+    <begdatelong>Thursday, October 23, 2014</begdatelong>
+    <enddatelong>Thursday, October 23, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101-A</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>250</attendance>
+    <eventid>1410031</eventid>
+    <days>
+      <day>10/23/2014</day>
+    </days>
+    <times>
+      <time>10/23/2014  8:00 AM</time>
+      <time>10/23/2014  7:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/24/2014</date>
+    <datelong>Friday, October 24, 2014</datelong>
+    <name><![CDATA[Eating Disorders Coalition of TN Annual Forum]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/24/2014</begdate>
+    <enddate>10/24/2014</enddate>
+    <begdatelong>Friday, October 24, 2014</begdatelong>
+    <enddatelong>Friday, October 24, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>201-A</location>
+    <nature>Regional Convention</nature>
+    <attendance>150</attendance>
+    <eventid>1410041</eventid>
+    <days>
+      <day>10/23/2014</day>
+      <day>10/24/2014</day>
+    </days>
+    <times>
+      <time>10/23/2014 12:00 PM</time>
+      <time>10/24/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/28/2014 - 10/30/2014</date>
+    <datelong>Tuesday, October 28, 2014 - Thursday, October 30, 2014</datelong>
+    <name><![CDATA[Trouw Nutrition]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/28/2014</begdate>
+    <enddate>10/30/2014</enddate>
+    <begdatelong>Tuesday, October 28, 2014</begdatelong>
+    <enddatelong>Thursday, October 30, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>105A-B</location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>80</attendance>
+    <eventid>1412013</eventid>
+    <days>
+      <day>10/28/2014</day>
+      <day>10/29/2014</day>
+      <day>10/30/2014</day>
+    </days>
+    <times>
+      <time>10/28/2014  4:00 PM</time>
+      <time>10/29/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>10/31/2014 - 11/ 2/2014</date>
+    <datelong>Friday, October 31, 2014 - Sunday, November 02, 2014</datelong>
+    <name><![CDATA[The Next Level Games presents Grand Prix Nashville]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>10/31/2014</begdate>
+    <enddate>11/ 2/2014</enddate>
+    <begdatelong>Friday, October 31, 2014</begdatelong>
+    <enddatelong>Sunday, November 02, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhD</location>
+    <nature>Public Spectator Event</nature>
+    <attendance>1,600</attendance>
+    <eventid>1411022</eventid>
+    <days>
+      <day>10/31/2014</day>
+      <day>11/ 1/2014</day>
+      <day>11/ 2/2014</day>
+    </days>
+    <times>
+      <time>10/31/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/ 4/2014</date>
+    <datelong>Tuesday, November 04, 2014</datelong>
+    <name><![CDATA[Pinnacle Financial Partner Quarterly Associate Mtg]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>11/ 4/2014</begdate>
+    <enddate>11/ 4/2014</enddate>
+    <begdatelong>Tuesday, November 04, 2014</begdatelong>
+    <enddatelong>Tuesday, November 04, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>103A-C</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>400</attendance>
+    <eventid>1411020</eventid>
+    <days>
+      <day>11/ 4/2014</day>
+    </days>
+    <times>
+      <time>11/ 4/2014  5:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/ 7/2014</date>
+    <datelong>Friday, November 07, 2014</datelong>
+    <name><![CDATA[Vanderbilt Univ Owen Health- Health Care Conf]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>11/ 7/2014</begdate>
+    <enddate>11/ 7/2014</enddate>
+    <begdatelong>Friday, November 07, 2014</begdatelong>
+    <enddatelong>Friday, November 07, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>208A-B</location>
+    <nature>Local Meeting/Seminar</nature>
+    <attendance>400</attendance>
+    <eventid>1410017</eventid>
+    <days>
+      <day>11/ 7/2014</day>
+    </days>
+    <times>
+      <time>11/ 7/2014  7:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/ 8/2014</date>
+    <datelong>Saturday, November 08, 2014</datelong>
+    <name><![CDATA[Show Hope Dinner]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>11/ 8/2014</begdate>
+    <enddate>11/ 8/2014</enddate>
+    <begdatelong>Saturday, November 08, 2014</begdatelong>
+    <enddatelong>Saturday, November 08, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>202A-C</location>
+    <nature>Meal Function</nature>
+    <attendance>750</attendance>
+    <eventid>1411032</eventid>
+    <days>
+      <day>11/ 8/2014</day>
+    </days>
+    <times>
+      <time>11/ 8/2014  5:30 PM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/11/2014 - 11/13/2014</date>
+    <datelong>Tuesday, November 11, 2014 - Thursday, November 13, 2014</datelong>
+    <name><![CDATA[Emergency Medical Services World Expo]]></name>
+    <url><![CDATA[http://www.emsworldexpo.com]]></url>
+    <open>No</open>
+    <begdate>11/11/2014</begdate>
+    <enddate>11/13/2014</enddate>
+    <begdatelong>Tuesday, November 11, 2014</begdatelong>
+    <enddatelong>Thursday, November 13, 2014</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">EMS World Expo offers innovative and dynamic education at a price that works for any budget. Our goal is simple: Make superior education and learning accessible and affordable to the greatest number of EMS providers. With the current changes in healthcare reform and the provision of public safety and EMS being held under closer scrutiny by both the public and politicians, the need for you to be prepared to meet the challenges ahead is more important than ever before. </font><br><br>]]></description>
+    <location>ExhA</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>3,000</attendance>
+    <eventid>1411011</eventid>
+    <days>
+      <day>11/ 9/2014</day>
+      <day>11/10/2014</day>
+      <day>11/11/2014</day>
+      <day>11/12/2014</day>
+      <day>11/13/2014</day>
+    </days>
+    <times>
+      <time>11/11/2014  6:00 AM</time>
+      <time>11/ 9/2014  6:00 AM</time>
+      <time>11/11/2014  6:00 AM</time>
+      <time>11/10/2014  6:00 AM</time>
+      <time>11/10/2014  6:00 AM</time>
+      <time>11/10/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/12/2014</date>
+    <datelong>Wednesday, November 12, 2014</datelong>
+    <name><![CDATA[CABLE Luncheon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>11/12/2014</begdate>
+    <enddate>11/12/2014</enddate>
+    <begdatelong>Wednesday, November 12, 2014</begdatelong>
+    <enddatelong>Wednesday, November 12, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location></location>
+    <nature>Meal Function</nature>
+    <attendance>250</attendance>
+    <eventid>1411040</eventid>
+    <days>
+      <day>11/12/2014</day>
+    </days>
+    <times>
+      <time>11/12/2014 11:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/17/2014 - 11/18/2014</date>
+    <datelong>Monday, November 17, 2014 - Tuesday, November 18, 2014</datelong>
+    <name><![CDATA[Global South Summit]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>11/17/2014</begdate>
+    <enddate>11/18/2014</enddate>
+    <begdatelong>Monday, November 17, 2014</begdatelong>
+    <enddatelong>Tuesday, November 18, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>207A-D</location>
+    <nature>Local Meeting/Seminar</nature>
+    <attendance>400</attendance>
+    <eventid>1411035</eventid>
+    <days>
+      <day>11/17/2014</day>
+      <day>11/18/2014</day>
+    </days>
+    <times>
+      <time>11/17/2014  7:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/19/2014</date>
+    <datelong>Wednesday, November 19, 2014</datelong>
+    <name><![CDATA[Nashville IT Symposium]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate>11/19/2014</begdate>
+    <enddate>11/19/2014</enddate>
+    <begdatelong>Wednesday, November 19, 2014</begdatelong>
+    <enddatelong>Wednesday, November 19, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>212</location>
+    <nature>Local Meeting/Seminar</nature>
+    <attendance>150</attendance>
+    <eventid>1411029</eventid>
+    <days>
+      <day>11/19/2014</day>
+    </days>
+    <times>
+      <time>11/19/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/20/2014 - 11/21/2014</date>
+    <datelong>Thursday, November 20, 2014 - Friday, November 21, 2014</datelong>
+    <name><![CDATA[MacDon Industries Ltd. 65th Anniversary Event]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>11/20/2014</begdate>
+    <enddate>11/21/2014</enddate>
+    <begdatelong>Thursday, November 20, 2014</begdatelong>
+    <enddatelong>Friday, November 21, 2014</enddatelong>
+    <description><![CDATA[MacDon Industries Ltd. is a family owned and Canadian based manufacturer of harvesting equipment specializing in the production of pull-type and self-propelled windrowers and specialty and pick-up headers for combines for world markets. Our disc, auger and draper products are commonly used to harvest a wide variety of cereal grains, oilseeds, grass seeds, rice, soybeans, hay, forage and specialty crops such as peas, lupins and lentils.<br>]]></description>
+    <location>ExhD</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,000</attendance>
+    <eventid>1411015</eventid>
+    <days>
+      <day>11/18/2014</day>
+      <day>11/19/2014</day>
+      <day>11/20/2014</day>
+      <day>11/21/2014</day>
+    </days>
+    <times>
+      <time>11/20/2014  6:00 AM</time>
+      <time>11/20/2014  6:00 AM</time>
+      <time>11/18/2014  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>11/20/2014 - 11/23/2014</date>
+    <datelong>Thursday, November 20, 2014 - Sunday, November 23, 2014</datelong>
+    <name><![CDATA[Nashville Auto Show ]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate>11/20/2014</begdate>
+    <enddate>11/23/2014</enddate>
+    <begdatelong>Thursday, November 20, 2014</begdatelong>
+    <enddatelong>Sunday, November 23, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhB-C</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>5,000</attendance>
+    <eventid>1411003</eventid>
+    <days>
+      <day>11/17/2014</day>
+      <day>11/18/2014</day>
+      <day>11/19/2014</day>
+      <day>11/20/2014</day>
+      <day>11/21/2014</day>
+      <day>11/22/2014</day>
+      <day>11/23/2014</day>
+    </days>
+    <times>
+      <time>11/17/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>12/ 1/2014 - 12/ 2/2014</date>
+    <datelong>Monday, December 01, 2014 - Tuesday, December 02, 2014</datelong>
+    <name><![CDATA[TN Law Institute]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>12/ 1/2014</begdate>
+    <enddate>12/ 2/2014</enddate>
+    <begdatelong>Monday, December 01, 2014</begdatelong>
+    <enddatelong>Tuesday, December 02, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location></location>
+    <nature>Meeting / Seminar</nature>
+    <attendance>600</attendance>
+    <eventid>1412012</eventid>
+    <days>
+      <day>12/ 1/2014</day>
+      <day>12/ 2/2014</day>
+    </days>
+    <times>
+      <time>12/ 1/2014  7:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>12/ 5/2014 - 12/ 9/2014</date>
+    <datelong>Friday, December 05, 2014 - Tuesday, December 09, 2014</datelong>
+    <name><![CDATA[Southern ASSN of COLL & Schools Commission on COLL]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>12/ 5/2014</begdate>
+    <enddate>12/ 9/2014</enddate>
+    <begdatelong>Friday, December 05, 2014</begdatelong>
+    <enddatelong>Tuesday, December 09, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA</location>
+    <nature>Regional Convention</nature>
+    <attendance>4,500</attendance>
+    <eventid>1412001</eventid>
+    <days>
+      <day>12/ 4/2014</day>
+      <day>12/ 5/2014</day>
+      <day>12/ 6/2014</day>
+      <day>12/ 7/2014</day>
+      <day>12/ 8/2014</day>
+      <day>12/ 9/2014</day>
+    </days>
+    <times>
+      <time>12/ 6/2014  8:00 AM</time>
+      <time>12/ 4/2014  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>12/12/2014</date>
+    <datelong>Friday, December 12, 2014</datelong>
+    <name><![CDATA[Middle Tennessee Realtors Luncheon]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>12/12/2014</begdate>
+    <enddate>12/12/2014</enddate>
+    <begdatelong>Friday, December 12, 2014</begdatelong>
+    <enddatelong>Friday, December 12, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>104A-E</location>
+    <nature>Meal Function</nature>
+    <attendance>300</attendance>
+    <eventid>1412008</eventid>
+    <days>
+      <day>12/12/2014</day>
+    </days>
+    <times>
+      <time>12/12/2014 11:30 AM</time>
+    </times>
+  </event>
+  <event>
+    <date>12/12/2014</date>
+    <datelong>Friday, December 12, 2014</datelong>
+    <name><![CDATA[Heritage Medical Holiday Party]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>12/12/2014</begdate>
+    <enddate>12/12/2014</enddate>
+    <begdatelong>Friday, December 12, 2014</begdatelong>
+    <enddatelong>Friday, December 12, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101A-E</location>
+    <nature>Local Dance/Reception</nature>
+    <attendance>375</attendance>
+    <eventid>1412007</eventid>
+    <days>
+      <day>12/12/2014</day>
+    </days>
+    <times>
+      <time>12/12/2014  3:00 PM</time>
+    </times>
+  </event>
+  <event>
+    <date>12/14/2014</date>
+    <datelong>Sunday, December 14, 2014</datelong>
+    <name><![CDATA[Aegis Sciences Corp. Holiday Party]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate>12/14/2014</begdate>
+    <enddate>12/14/2014</enddate>
+    <begdatelong>Sunday, December 14, 2014</begdatelong>
+    <enddatelong>Sunday, December 14, 2014</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>BR-B</location>
+    <nature>Meal Function</nature>
+    <attendance>800</attendance>
+    <eventid>1412017</eventid>
+    <days>
+      <day>12/14/2014</day>
+    </days>
+    <times>
+      <time>12/14/2014  5:00 PM</time>
+      <time>12/14/2014 10:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 1/ 4/2015</date>
+    <datelong>Sunday, January 04, 2015</datelong>
+    <name><![CDATA[The Nashville Pink Bridal Show]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 1/ 4/2015</begdate>
+    <enddate> 1/ 4/2015</enddate>
+    <begdatelong>Sunday, January 04, 2015</begdatelong>
+    <enddatelong>Sunday, January 04, 2015</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhD</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>4,000</attendance>
+    <eventid>1501035</eventid>
+    <days>
+      <day> 1/ 4/2015</day>
+    </days>
+    <times>
+      <time> 1/ 4/2015  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 1/ 8/2015 -  1/11/2015</date>
+    <datelong>Thursday, January 08, 2015 - Sunday, January 11, 2015</datelong>
+    <name><![CDATA[Progressive Insurance Nashville Boat and Sports Show]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 1/ 8/2015</begdate>
+    <enddate> 1/11/2015</enddate>
+    <begdatelong>Thursday, January 08, 2015</begdatelong>
+    <enddatelong>Sunday, January 11, 2015</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC-D</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>10,000</attendance>
+    <eventid>1501001</eventid>
+    <days>
+      <day> 1/ 8/2015</day>
+      <day> 1/ 9/2015</day>
+      <day> 1/10/2015</day>
+      <day> 1/11/2015</day>
+    </days>
+    <times>
+      <time> 1/ 8/2015  5:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 1/28/2015 -  1/30/2015</date>
+    <datelong>Wednesday, January 28, 2015 - Friday, January 30, 2015</datelong>
+    <name><![CDATA[National Pavement Expo]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 1/28/2015</begdate>
+    <enddate> 1/30/2015</enddate>
+    <begdatelong>Wednesday, January 28, 2015</begdatelong>
+    <enddatelong>Friday, January 30, 2015</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">National Pavement Expo is the only event in the paving and pavement maintenance industry addressing all industry segments. </font>NPE offers educational seminars and workshops led by industry experts that provide industry-specific insights to help contractors strengthen their businesses and work more efficiently. Attendees will learn first-hand the latest technological advancements and have the opportunity to interact with industry professionals.<br><br>]]></description>
+    <location>ExhC</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>1,500</attendance>
+    <eventid>1501006</eventid>
+    <days>
+      <day> 1/27/2015</day>
+      <day> 1/28/2015</day>
+      <day> 1/29/2015</day>
+      <day> 1/30/2015</day>
+      <day> 1/31/2015</day>
+    </days>
+    <times>
+      <time> 1/28/2015  6:00 AM</time>
+      <time> 1/27/2015  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 1/29/2015 -  2/ 1/2015</date>
+    <datelong>Thursday, January 29, 2015 - Sunday, February 01, 2015</datelong>
+    <name><![CDATA[Antiques & Garden Show of Nashville]]></name>
+    <url><![CDATA[]]></url>
+    <open>Yes</open>
+    <begdate> 1/29/2015</begdate>
+    <enddate> 2/ 1/2015</enddate>
+    <begdatelong>Thursday, January 29, 2015</begdatelong>
+    <enddatelong>Sunday, February 01, 2015</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhC</location>
+    <nature>Public Consumer Show</nature>
+    <attendance>6,797</attendance>
+    <eventid>1501003</eventid>
+    <days>
+      <day> 1/29/2015</day>
+      <day> 1/30/2015</day>
+      <day> 1/31/2015</day>
+      <day> 2/ 1/2015</day>
+    </days>
+    <times>
+      <time> 1/29/2015  8:00 AM</time>
+      <time> 1/29/2015  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 2/ 3/2015 -  2/ 6/2015</date>
+    <datelong>Tuesday, February 03, 2015 - Friday, February 06, 2015</datelong>
+    <name><![CDATA[NCA Group Claims Seminar]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 2/ 3/2015</begdate>
+    <enddate> 2/ 6/2015</enddate>
+    <begdatelong>Tuesday, February 03, 2015</begdatelong>
+    <enddatelong>Friday, February 06, 2015</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>101A-D</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>200</attendance>
+    <eventid>1502023</eventid>
+    <days>
+      <day> 2/ 3/2015</day>
+      <day> 2/ 4/2015</day>
+      <day> 2/ 5/2015</day>
+      <day> 2/ 6/2015</day>
+    </days>
+    <times>
+      <time> 2/ 3/2015  7:00 AM</time>
+      <time> 2/ 3/2015  7:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 2/ 5/2015</date>
+    <datelong>Thursday, February 05, 2015</datelong>
+    <name><![CDATA[Verizon Wireless Regional Kick-off Meeting]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 2/ 5/2015</begdate>
+    <enddate> 2/ 5/2015</enddate>
+    <begdatelong>Thursday, February 05, 2015</begdatelong>
+    <enddatelong>Thursday, February 05, 2015</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>104A-E</location>
+    <nature>Regional Meeting/Seminar</nature>
+    <attendance>500</attendance>
+    <eventid>1501038</eventid>
+    <days>
+      <day> 2/ 5/2015</day>
+    </days>
+    <times>
+      <time> 2/ 5/2015  8:00 AM</time>
+      <time> 2/ 5/2015  8:00 AM</time>
+      <time> 2/ 5/2015  8:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 2/23/2015 -  2/24/2015</date>
+    <datelong>Monday, February 23, 2015 - Tuesday, February 24, 2015</datelong>
+    <name><![CDATA[Tractor Supply Company]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 2/23/2015</begdate>
+    <enddate> 2/24/2015</enddate>
+    <begdatelong>Monday, February 23, 2015</begdatelong>
+    <enddatelong>Tuesday, February 24, 2015</enddatelong>
+    <description><![CDATA[]]></description>
+    <location>ExhA-B</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>2,000</attendance>
+    <eventid>1502003</eventid>
+    <days>
+      <day> 2/22/2015</day>
+      <day> 2/23/2015</day>
+      <day> 2/24/2015</day>
+    </days>
+    <times>
+      <time> 2/23/2015  6:00 AM</time>
+      <time> 2/22/2015  6:00 AM</time>
+      <time> 2/22/2015  6:00 AM</time>
+      <time> 2/22/2015  6:00 AM</time>
+      <time> 2/23/2015  6:00 AM</time>
+    </times>
+  </event>
+  <event>
+    <date> 3/25/2015 -  3/27/2015</date>
+    <datelong>Wednesday, March 25, 2015 - Friday, March 27, 2015</datelong>
+    <name><![CDATA[American Institute of Steel Construction Natl Conf]]></name>
+    <url><![CDATA[]]></url>
+    <open>No</open>
+    <begdate> 3/25/2015</begdate>
+    <enddate> 3/27/2015</enddate>
+    <begdatelong>Wednesday, March 25, 2015</begdatelong>
+    <enddatelong>Friday, March 27, 2015</enddatelong>
+    <description><![CDATA[<font  face="Times New Roman">The American Institute of Steel Construction (</font>AISC), headquartered in Chicago, is a not-for-profit technical institute and trade association established in 1921 to serve the structural steel design community and construction industry in the United States. AISC\rquote s mission is to make structural steel the material of choice by being the leader in structural-steel-related technical and market-building activities, including: specification and code development, research, education, technical assistance, quality certification, standardization, and market development. AISC has a long tradition of service to the steel construction industry providing timely and reliable information. <br>As part of AISC's mission, we emphasize: <br><ul><li>\sb100\\sa100 Increasing the structural steel industry\rquote s share of the construction market <li>Unifying the industry with a common purpose <li>Supporting and improving the ability of the structural steel industry to be both innovative and competitive in a worldwide construction market\sb100\\sa100\<br></ul>For almost 90 years, AISC has conducted its numerous activities with a scrupulous sense of public responsibility. For this reason, and because of the high caliber of its staff, the Institute enjoys a close working relationship with architects, engineers, code officials and educators who recognize its professional status in the fields of specification writing, structural research, design development and performance standards. </ul>AISC represents the total experience, judgment and strength of the entire domestic industry of steel fabricators, distributors and producers. The scope and success of its activities could not be achieved by any one member of the industry. The nation shares the rewards of these activities \endash  through better, safer and more economical buildings, bridges and other structures framed in structural steel.</ul><br><br>]]></description>
+    <location>ExhC-D</location>
+    <nature>Natl Convention/Tradeshow/Conf</nature>
+    <attendance>4,000</attendance>
+    <eventid>1503003</eventid>
+    <days>
+      <day> 3/21/2015</day>
+      <day> 3/22/2015</day>
+      <day> 3/23/2015</day>
+      <day> 3/24/2015</day>
+      <day> 3/25/2015</day>
+      <day> 3/26/2015</day>
+      <day> 3/27/2015</day>
+      <day> 3/28/2015</day>
+    </days>
+    <times>
+      <time> 3/25/2015  8:00 AM</time>
+      <time> 3/25/2015  8:00 AM</time>
+      <time> 3/25/2015  8:00 AM</time>
+      <time> 3/25/2015  8:00 AM</time>
+      <time> 3/21/2015  8:00 AM</time>
+    </times>
+  </event>
+</events>
