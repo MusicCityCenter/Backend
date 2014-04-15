@@ -423,6 +423,39 @@ public class NavController {
 				year);
 		return confs;
 	}
+	
+	/**
+	 * Add a conference to the list of conferences for the specified building, day, time,
+	 * etc.
+	 * 
+	 * @param floorplanId
+	 * @param month
+	 * @param day
+	 * @param year
+	 * @return
+	 */
+	@RequestMapping(value = "/conferences/{floorplanId}/on/{month}/{day}/{year}/for/{days}", method = RequestMethod.GET)
+	public @ResponseBody
+	Conference addConferenceOn(@PathVariable("floorplanId") String floorplanId,
+			@PathVariable("month") int month, @PathVariable("day") int day,
+			@PathVariable("year") int year, @PathVariable("days") int days,
+			@RequestParam("name") String name,
+			@RequestParam("description") String desc) {
+
+		Conference conf = new Conference();
+		conf.setFloorplanId(floorplanId);
+		conf.setStartDay(day);
+		conf.setStartMonth(month);
+		conf.setStartYear(year);
+		conf.setEndYear(year);
+		conf.setEndMonth(month);
+		conf.setEndDay(day + days);
+		conf.setName(name);
+		conf.setDescription(desc);
+		eventLoader_.saveConference(conf);
+
+		return conf;
+	}
 
 	/**
 	 * Add an event to the list of events for the specified building, day, time,

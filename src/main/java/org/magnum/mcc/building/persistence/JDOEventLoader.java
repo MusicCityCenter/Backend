@@ -24,17 +24,25 @@ public class JDOEventLoader implements EventLoader {
 	public Set<Conference> getConferencesOn(String floorplanId, int month, int day, int year) {
 		
 		Set<Conference> confs = null;
+		Set<Conference> filtered = new HashSet<>();
 		final PersistenceManager pm = getPersistenceManager();
 		try{
 			Query query = pm.newQuery(Conference.class);
-			query.setFilter("floorplanId == f && year == y && month == m && day == d");
+			query.setFilter("floorplanId == f && startYear == y && startMonth == m && startDay <= d");
 			query.declareParameters("String f,int y,int m,int d");
 			confs = new HashSet<Conference>((List<Conference>)query.executeWithArray(floorplanId,year,month,day));
+			
+			
+			for(Conference c : confs){
+				if(c.getEndDay() >= day){
+					filtered.add(c);
+				}
+			}
 			
 		}finally{
 			pm.close();
 		}
-		return confs;
+		return filtered;
 	}
 	
 	@Override
