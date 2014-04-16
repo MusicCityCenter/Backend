@@ -6,11 +6,12 @@
  */
 package org.magnum.mcc.building.persistence;
 
-import java.util.HashMap;
-import java.util.HashSet;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
@@ -42,10 +43,17 @@ public class JDOBeaconsLoader implements BeaconsLoader {
 
 		try {
 
-			Map<String, BeaconsAtFloorplanLocation> mapped = new HashMap<String, BeaconsAtFloorplanLocation>();
+			Map<String, BeaconsAtFloorplanLocation> mapped = new TreeMap<String, BeaconsAtFloorplanLocation>();
 
 			Floorplan fp = floorplanLoader_.load(floorplanId);
 			assert (fp != null);
+			
+			//Get the current mapping, so that only new information will be overwritten
+			Set<BeaconsAtFloorplanLocation> currentBeaconsAtLocations = getBeacons(floorplanId);
+			for (BeaconsAtFloorplanLocation currentBeacons: currentBeaconsAtLocations){
+				mapped.put(currentBeacons.getLocationId(), currentBeacons);
+				
+			}
 
 			for (BeaconsAtFloorplanLocation bal : beaconMapping) {
 				pm.makePersistent(bal);
@@ -101,7 +109,7 @@ public class JDOBeaconsLoader implements BeaconsLoader {
 		}
 
 		return (bal != null) ? bal.getBeaconIds()
-				: new HashSet<BeaconObservation>();
+				: new TreeSet<BeaconObservation>();
 	}
 
 	@Override
@@ -128,7 +136,7 @@ public class JDOBeaconsLoader implements BeaconsLoader {
 		Floorplan fp = floorplanLoader_.load(floorplanid);
 		assert (fp != null);
 
-		Map<String, BeaconsAtFloorplanLocation> mapped = new HashMap<String, BeaconsAtFloorplanLocation>();
+		Map<String, BeaconsAtFloorplanLocation> mapped = new TreeMap<String, BeaconsAtFloorplanLocation>();
 
 		try {
 			final Query q = pm.newQuery(BeaconsAtFloorplanLocation.class);
@@ -146,8 +154,8 @@ public class JDOBeaconsLoader implements BeaconsLoader {
 			pm.close();
 		}
 
-		return (beacons != null) ? new HashSet<BeaconsAtFloorplanLocation>(
-				beacons) : new HashSet<BeaconsAtFloorplanLocation>();
+		return (beacons != null) ? new TreeSet<BeaconsAtFloorplanLocation>(
+				beacons) : new TreeSet<BeaconsAtFloorplanLocation>();
 	}
 
 	@Override

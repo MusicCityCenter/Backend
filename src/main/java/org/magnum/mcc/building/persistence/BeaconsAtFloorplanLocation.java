@@ -22,7 +22,7 @@ import com.google.common.base.Objects;
 
 @PersistenceCapable
 @FetchGroup(name = "beaconGroup", members = { @Persistent(name = "beaconIds") }) 
-public class BeaconsAtFloorplanLocation {
+public class BeaconsAtFloorplanLocation implements Comparable {
 
 	public static String getId(String fid, String lid) {
 		lid = CharMatcher.JAVA_LETTER_OR_DIGIT.retainFrom(lid);
@@ -94,5 +94,13 @@ public class BeaconsAtFloorplanLocation {
 			.add("locationId", this.locationId)
 			.add("beacons", this.beaconIds)
 			.toString();
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		if (o instanceof BeaconsAtFloorplanLocation)
+			return this.locationId.compareTo(((BeaconsAtFloorplanLocation) o).locationId);
+		else
+			return 0;
 	}
 }
