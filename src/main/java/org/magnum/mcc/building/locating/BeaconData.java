@@ -16,5 +16,9 @@ public class BeaconData {
 		distance=dist;
 		accuracy=acc;
 	}
+	
+	public String getAggregateId(){
+		return uuid+"-"+major+"-"+minor;
+	}
 
 }

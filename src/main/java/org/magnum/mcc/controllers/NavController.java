@@ -569,7 +569,7 @@ public class NavController {
 		//Debug
 		//System.out.println("\n\n"+jsonLocationData+"\n\n");
 		Floorplan floorplan = floorplanLoader_.load(floorplanId);
-		return locator_.locateBy(jsonLocationData, floorplan);
+		return locator_.locateBy(jsonLocationData, floorplan, beaconsLoader_, floorplanId);
 	}
 	
 
