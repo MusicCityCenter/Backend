@@ -426,6 +426,20 @@ public class NavController {
 	}
 	
 	/**
+	 * Synchronizes all locations with their remote calendars. This should only
+	 * be called by an AppEngine cron job.
+	 * 
+	 * @return
+	 */
+	@RequestMapping(value = "/events/sync", method = RequestMethod.GET)
+	public @ResponseBody
+	boolean syncAllEvents() {
+		eventSynchronizer_.syncAllCalendars();
+		return true;
+	}
+	
+	
+	/**
 	 * Returns the list of events that are taking place in the building wtih the
 	 * given floor plan on the specified date.
 	 * 
