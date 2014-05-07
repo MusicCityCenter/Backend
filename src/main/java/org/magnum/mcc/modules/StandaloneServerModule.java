@@ -36,6 +36,8 @@ import org.magnum.mcc.building.persistence.JDOBeaconsLoader;
 import org.magnum.mcc.building.persistence.JDOEventLoader;
 import org.magnum.mcc.building.persistence.JDOFloorplanImageMappingLoader;
 import org.magnum.mcc.building.persistence.JDOFloorplanLoader;
+import org.magnum.mcc.building.sync.EventCalendarSynchronizer;
+import org.magnum.mcc.building.sync.OloXMLCalendarSynchronizer;
 import org.magnum.mcc.paths.Dijkstra;
 import org.magnum.mcc.paths.ShortestPathSolver;
 
@@ -66,7 +68,8 @@ public class StandaloneServerModule extends AbstractModule {
 		bind(EventLoader.class).to(JDOEventLoader.class);
 		bind(ShortestPathSolver.class).to(Dijkstra.class);
 		bind(ProbabalisticLocator.class).to(BeaconProbabalisticLocator.class);
-
+		bind(EventCalendarSynchronizer.class).to(OloXMLCalendarSynchronizer.class);
+		
 		// Configure the GuesserStrategies
 		MapBinder<MeasurementType, GuesserStrategy> mapbinder = MapBinder
 				.newMapBinder(binder(), MeasurementType.class,

@@ -13,7 +13,6 @@
 package org.magnum.mcc.controllers;
 
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -43,6 +42,8 @@ import org.magnum.mcc.building.persistence.FloorplanLoader;
 import org.magnum.mcc.building.persistence.FloorplanMarshaller;
 import org.magnum.mcc.building.persistence.JDOEventLoader;
 import org.magnum.mcc.building.persistence.MCCObjectMapper;
+import org.magnum.mcc.building.sync.CalendarSyncSettings;
+import org.magnum.mcc.building.sync.EventCalendarSynchronizer;
 import org.magnum.mcc.modules.StandaloneServerModule;
 import org.magnum.mcc.paths.DirectedGraph;
 import org.magnum.mcc.paths.Path;
@@ -50,14 +51,11 @@ import org.magnum.mcc.paths.ShortestPathSolver;
 import org.magnum.mcc.paths.ShortestPaths;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -89,6 +87,8 @@ public class NavController {
 	private ShortestPathSolver solver_;
 	
 	private ProbabalisticLocator locator_;
+	
+	private EventCalendarSynchronizer eventSynchronizer_;
 
 	public NavController() {
 		Injector injector = Guice.createInjector(new StandaloneServerModule());
@@ -103,6 +103,7 @@ public class NavController {
 		beaconsLoader_ = injector.getInstance(BeaconsLoader.class);
 		eventLoader_ = injector.getInstance(JDOEventLoader.class);
 		locator_ = injector.getInstance(ProbabalisticLocator.class);
+		eventSynchronizer_ = injector.getInstance(EventCalendarSynchronizer.class);
 	}
 
 	// A duplicate of the next method to make posting floorplans
@@ -384,6 +385,46 @@ public class NavController {
 		return pathData;
 	}
 
+	/**
+	 * Enables synchronization of a location's events with a remote calendar feed.
+	 * 
+	 * @param floorplanId the ID of the floor plan to sync events for 
+	 * @param settings the synchronization settings
+	 * @return
+	 */
+	@RequestMapping(value = "/events/{floorplanId}/sync", method = RequestMethod.POST)
+	public @ResponseBody
+	CalendarSyncSettings enableEventSync(@PathVariable("floorplanId") String floorplanId,
+			@RequestParam("settings") CalendarSyncSettings settings) {
+		
+		if(settings.getId() == floorplanId){
+			eventSynchronizer_.enableCalendarSync(settings);
+		}
+		
+		return settings;
+	}
+	
+	/**
+	 * Enables synchronization of a location's events with a remote calendar feed.
+	 * 
+	 * @param floorplanId the ID of the floor plan to sync events for 
+	 * @param url the remote event feed to sync with
+	 * @return
+	 */
+	@RequestMapping(value = "/events/{floorplanId}/sync/with", method = RequestMethod.GET)
+	public @ResponseBody
+	CalendarSyncSettings enableEventSyncWithURL(@PathVariable("floorplanId") String floorplanId,
+			@RequestParam("url") String url) {
+
+		CalendarSyncSettings settings = new CalendarSyncSettings();
+		settings.setId(floorplanId);
+		settings.setRemoteCalendarUrl(url);
+		settings.setSyncEnabled(true);
+		eventSynchronizer_.enableCalendarSync(settings);
+		
+		return settings;
+	}
+	
 	/**
 	 * Returns the list of events that are taking place in the building wtih the
 	 * given floor plan on the specified date.

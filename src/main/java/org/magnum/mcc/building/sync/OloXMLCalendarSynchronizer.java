@@ -6,10 +6,23 @@
  */
 package org.magnum.mcc.building.sync;
 
-import java.io.IOException;
-import java.util.List;
+import static com.google.common.base.Preconditions.checkArgument;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+
+import javax.jdo.PersistenceManager;
+
+import org.joda.time.DateTime;
 import org.magnum.mcc.building.persistence.Event;
+import org.magnum.mcc.building.persistence.PMF;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -18,165 +31,149 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 public class OloXMLCalendarSynchronizer implements EventCalendarSynchronizer {
 
-	public static class XMLEventSpec {
-		private String date;
-		private String datelong;
-		private String name;
-		private String url;
-		private String open;
-		private String begdate;
-		private String enddate;
-		private String begdatelong;
-		private String enddatelong;
-		private String description;
-		private String location;
-		private String nature;
-		private String attendance;
-		private String eventid;
-		private List<String> days;
-		private List<String> times;
+	private PersistenceManager getPersistenceManager() {
+		return PMF.get().getPersistenceManager();
+	}
 
-		public String getDate() {
-			return date;
+	public void syncAllCalendars() {
+		@SuppressWarnings("unchecked")
+		Collection<CalendarSyncSettings> all = (Collection<CalendarSyncSettings>) getPersistenceManager()
+				.newQuery(CalendarSyncSettings.class).execute();
+		for(CalendarSyncSettings settings : all){
+			syncCalendar(settings);
 		}
+	}
 
-		public void setDate(String date) {
-			this.date = date;
+	public void syncCalendar(CalendarSyncSettings settings) {
+		try {
+			List<Event> evts = fetchRawEvents(settings.getId(), settings.getRemoteCalendarUrl());
+			getPersistenceManager().makePersistentAll(evts);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+	}
 
-		public String getDatelong() {
-			return datelong;
-		}
-
-		public void setDatelong(String datelong) {
-			this.datelong = datelong;
-		}
-
-		public String getName() {
-			return name;
-		}
-
-		public void setName(String name) {
-			this.name = name;
-		}
-
-		public String getUrl() {
-			return url;
-		}
-
-		public void setUrl(String url) {
-			this.url = url;
-		}
-
-		public String getOpen() {
-			return open;
-		}
-
-		public void setOpen(String open) {
-			this.open = open;
-		}
-
-		public String getBegdate() {
-			return begdate;
-		}
-
-		public void setBegdate(String begdate) {
-			this.begdate = begdate;
-		}
-
-		public String getEnddate() {
-			return enddate;
-		}
-
-		public void setEnddate(String enddate) {
-			this.enddate = enddate;
-		}
-
-		public String getBegdatelong() {
-			return begdatelong;
-		}
-
-		public void setBegdatelong(String begdatelong) {
-			this.begdatelong = begdatelong;
-		}
-
-		public String getEnddatelong() {
-			return enddatelong;
-		}
-
-		public void setEnddatelong(String enddatelong) {
-			this.enddatelong = enddatelong;
-		}
-
-		public String getDescription() {
-			return description;
-		}
-
-		public void setDescription(String description) {
-			this.description = description;
-		}
-
-		public String getLocation() {
-			return location;
-		}
-
-		public void setLocation(String location) {
-			this.location = location;
-		}
-
-		public String getNature() {
-			return nature;
-		}
-
-		public void setNature(String nature) {
-			this.nature = nature;
-		}
-
-		public String getAttendance() {
-			return attendance;
-		}
-
-		public void setAttendance(String attendance) {
-			this.attendance = attendance;
-		}
-
-		public String getEventid() {
-			return eventid;
-		}
-
-		public void setEventid(String eventid) {
-			this.eventid = eventid;
-		}
-
-		public List<String> getDays() {
-			return days;
-		}
-
-		public void setDays(List<String> days) {
-			this.days = days;
-		}
-
-		public List<String> getTimes() {
-			return times;
-		}
-
-		public void setTimes(List<String> times) {
-			this.times = times;
-		}
-
+	public List<Event> fetchRawEvents(String floorplanId, String url)
+			throws MalformedURLException, IOException, JsonParseException,
+			JsonMappingException {
+		String rawcal = fetchCalendar(url);
+		List<Event> evts = parseNativeEvents(floorplanId, rawcal);
+		return evts;
 	}
 
 	@Override
-	public void syncCalendar() {
-		// TODO Auto-generated method stub
+	public void syncCalendar(String floorplanId) {
+		PersistenceManager pm = getPersistenceManager();
+		CalendarSyncSettings settings = pm.getObjectById(
+				CalendarSyncSettings.class, floorplanId);
 
+		syncCalendar(settings);
 	}
 
-	public List<XMLEventSpec> parseRemoteCalendar(String cal) throws JsonParseException, JsonMappingException, IOException {
+	
+	private List<Event> parseNativeEvents(String floorplanId, String caldata)
+			throws JsonParseException, JsonMappingException, IOException {
+		List<XMLEventSpec> evtspecs = parseRemoteCalendar(caldata);
+		List<Event> evts = convertToNativeEvents(floorplanId, evtspecs);
+		return evts;
+	}
+
+	private String fetchCalendar(String calUrl) throws MalformedURLException,
+			IOException {
+		URL url = new URL(calUrl);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(
+				url.openStream()));
+		String line = null;
+
+		StringBuffer buff = new StringBuffer();
+		while ((line = reader.readLine()) != null) {
+			buff.append(line);
+			buff.append("\n");
+		}
+		reader.close();
+		return buff.toString();
+	}
+
+	public List<Event> convertToNativeEvents(String floorplanId,
+			List<XMLEventSpec> eventspecs) {
+		List<Event> events = new ArrayList<>(eventspecs.size());
+		for (XMLEventSpec spec : eventspecs) {
+
+			Set<DateTime> when = spec.getEventDays();
+			for (DateTime day : when) {
+				try {
+					Event evt = createEvent(floorplanId, day, spec);
+					events.add(evt);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return events;
+	}
+
+	private Event createEvent(String floorplanId, DateTime when,
+			XMLEventSpec spec) {
+		Event evt = new Event();
+		evt.setName(spec.getName());
+		evt.setConference(spec.getName());
+		evt.setDescription(spec.getDescription());
+		evt.setId(spec.getEventid());
+		evt.setFloorplanId(floorplanId);
+		evt.setFloorplanLocationId(spec.getLocation());
+		evt.setDay(when.getDayOfMonth());
+		evt.setMonth(when.getMonthOfYear());
+		evt.setYear(when.getYear());
+
+		long start = getStartTime(when);
+		evt.setStartTime(start);
+		return evt;
+	}
+
+	private long getStartTime(DateTime when) {
+		return ((long) when.getHourOfDay()) * 1000L * 60L * 60L;
+	}
+
+	public List<XMLEventSpec> parseRemoteCalendar(String cal)
+			throws JsonParseException, JsonMappingException, IOException {
 		XmlMapper mapper = new XmlMapper();
-		List<XMLEventSpec> eventSpecs = mapper.readValue(cal, new TypeReference<List<XMLEventSpec>>() { });
-		
+		List<XMLEventSpec> eventSpecs = mapper.readValue(cal,
+				new TypeReference<List<XMLEventSpec>>() {
+				});
+
 		return eventSpecs;
+	}
+
+	@Override
+	public void enableCalendarSync(CalendarSyncSettings settings) {
+		checkArgument(settings.getId() != null);
+		checkArgument(settings.getRemoteCalendarUrl() != null);
+		
+		// Ensure the remote calendar can be reached before enabling sync
+		try{
+			URL url = new URL(settings.getRemoteCalendarUrl());
+			url.openStream().close();
+		}catch(Exception e){
+			throw new RuntimeException("Unable to connect to the specified remote calendar", e);
+		}
+		
+		settings.setSyncEnabled(true);
+		getPersistenceManager().makePersistent(settings);
+		
+		syncCalendar(settings);
+	}
+
+	@Override
+	public void disableCalendarSync(String floorplanId) {
+		try{
+			CalendarSyncSettings settings = getPersistenceManager().getObjectById(CalendarSyncSettings.class, floorplanId);
+			getPersistenceManager().deletePersistent(settings);
+		}catch(Exception e){
+			// We don't care if it doesn't exist.
+		}
 	}
 
 }
