@@ -51,7 +51,7 @@ public class OloXMLCalendarSynchronizerTest {
 				assertEquals(evt.getDay(), day.getDayOfMonth());
 				assertEquals(evt.getMonth(), day.getMonthOfYear());
 				assertEquals(evt.getYear(), day.getYear());
-				assertEquals(evt.getStartTime(),  ((long)day.getHourOfDay()) * 1000L * 60L * 60L);
+				assertEquals(evt.getStartTime(),  day.getHourOfDay() * 60 + day.getMinuteOfHour());
 				j++;
 			}
 		}

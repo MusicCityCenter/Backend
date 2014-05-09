@@ -104,7 +104,7 @@ public class OloXMLCalendarSynchronizer implements EventCalendarSynchronizer {
 			Set<DateTime> when = spec.getEventDays();
 			for (DateTime day : when) {
 				try {
-					Event evt = createEvent(floorplanId, day, spec);
+					Event evt = createEvent(floorplanId, day, null, spec);
 					events.add(evt);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -115,7 +115,7 @@ public class OloXMLCalendarSynchronizer implements EventCalendarSynchronizer {
 		return events;
 	}
 
-	private Event createEvent(String floorplanId, DateTime when,
+	private Event createEvent(String floorplanId, DateTime when, DateTime endswhen,
 			XMLEventSpec spec) {
 		Event evt = new Event();
 		evt.setName(spec.getName());
@@ -128,13 +128,17 @@ public class OloXMLCalendarSynchronizer implements EventCalendarSynchronizer {
 		evt.setMonth(when.getMonthOfYear());
 		evt.setYear(when.getYear());
 
-		long start = getStartTime(when);
+		endswhen = (endswhen == null)? new DateTime(when).withHourOfDay(23) : endswhen;
+		
+		int start = getEventTime(when);
+		int end = getEventTime(endswhen);
 		evt.setStartTime(start);
+		evt.setEndTime(end);
 		return evt;
 	}
 
-	private long getStartTime(DateTime when) {
-		return ((long) when.getHourOfDay()) * 1000L * 60L * 60L;
+	private int getEventTime(DateTime when) {
+		return when.getMinuteOfHour() + when.getHourOfDay()*60;
 	}
 
 	public List<XMLEventSpec> parseRemoteCalendar(String cal)
